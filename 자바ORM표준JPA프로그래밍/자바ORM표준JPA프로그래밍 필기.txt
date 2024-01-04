@@ -1,0 +1,14 @@
+JDBC의 개념
+ - JDBC는 Java Database Connectivity의 약자로 데이터베이스와 통신하기 위한 API
+ - JDBC는 데이터베이스의 종류에 상관없이 똑같은 코드로 해결할 수 있다.
+출처 : https://velog.io/@pppp0722/JDBC-JPA-Hibernate-Spring-Data-JPA-%EC%B0%A8%EC%9D%B4
+
+JDBC와 JPA의 관계
+
+ORM 프레임워크의 개념
+
+관계형 데이터베이스의 개념
+ - 데이터가 하나 이상의 열과 행의 테이블(또는 '관계')에 저장되어 서로 다른 데이터 구조가 어떻게 관련되어 있는지 쉽게 파악하고 이해할 수 있도록 사전 정의된 관계로 데이터를 구성하는 정보 모음
+ - 관계는 이러한 테이블 간의 상호작용을 기반으로 설정되는 여러 테이블 간의 논리적 연결
+출처 : https://cloud.google.com/learn/what-is-a-relational-database?hl=ko
+ - 32p 그림 1.1
