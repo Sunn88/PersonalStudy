@@ -18,18 +18,28 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test' 
+	//1-4-1 Devtools - 서버 재시작하지 않아도 수정 반영
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
+    //1-4-2 Lombok - Getter, Setter 등 자동 생성 
     compileOnly 'org.projectlombok:lombok' 
-    annotationProcessor 'org.projectlombok:lombok' 
+    annotationProcessor 'org.projectlombok:lombok'
+    //2-3-1 H2 데이터베이스
     runtimeOnly 'com.h2database:h2'
+    //2-3-3 JPA 라이브러리
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa' 
+    //2-5-3 JUnit - 리포지토리만 개별적으로 실행 및 테스트 가능
     testImplementation 'org.junit.jupiter:junit-jupiter' 
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+    //2-7-1 타임리프
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
     implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect'
+    //2-16-7 spring boot validation 라이브러리
     implementation 'org.springframework.boot:spring-boot-starter-validation'
+    //3-5-1 스프링 시큐리티
     implementation 'org.springframework.boot:spring-boot-starter-security'
     implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity6'
+    //3-12-1 마크다운
+    implementation 'org.commonmark:commonmark:0.21.0'
 }
 
 tasks.named('test') {

@@ -11,6 +11,8 @@ import org.springframework.dao.DataIntegrityViolationException;
 
 import lombok.RequiredArgsConstructor;
 
+
+//3-6-7 회원 컨트롤러~
 @RequiredArgsConstructor
 @Controller
 @RequestMapping("/user")
@@ -34,7 +36,7 @@ public class UserController {
                     "2개의 패스워드가 일치하지 않습니다.");
             return "signup_form";
         }
-
+        //3-6-10 중복 회원가입 방지~
         try {
             userService.create(userCreateForm.getUsername(), 
                     userCreateForm.getEmail(), userCreateForm.getPassword1());
@@ -47,12 +49,16 @@ public class UserController {
             bindingResult.reject("signupFailed", e.getMessage());
             return "signup_form";
         }
+        //~3-6-10 중복 회원가입 방지
 
         return "redirect:/";
     }
+    //~3-6-7 회원 컨트롤러
     
+    //3-7-2 로그인 URL 매핑~
     @GetMapping("/login")
     public String login() {
         return "login_form";
     }
+    //~3-7-2 로그인 URL 매핑
 }

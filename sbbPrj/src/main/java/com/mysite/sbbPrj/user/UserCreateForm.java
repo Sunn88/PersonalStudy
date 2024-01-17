@@ -7,6 +7,7 @@ import jakarta.validation.constraints.Size;
 import lombok.Getter;
 import lombok.Setter;
 
+//3-6-6 회원가입 폼 클래스
 @Getter
 @Setter
 public class UserCreateForm {

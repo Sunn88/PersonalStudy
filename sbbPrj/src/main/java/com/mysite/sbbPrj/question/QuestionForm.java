@@ -6,6 +6,7 @@ import jakarta.validation.constraints.Size;
 import lombok.Getter;
 import lombok.Setter;
 
+//2-16-8 질문 폼 클래스
 @Getter
 @Setter
 public class QuestionForm {

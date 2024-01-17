@@ -12,10 +12,9 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import com.mysite.sbbPrj.UserRepository;
-
 import lombok.RequiredArgsConstructor;
 
+//3-7-6 스프링 시큐리티 로그인 시 사용할 서비스
 @RequiredArgsConstructor
 @Service
 public class UserSecurityService implements UserDetailsService {

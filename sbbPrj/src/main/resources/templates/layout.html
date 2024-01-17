@@ -1,4 +1,5 @@
 <!doctype html>
+<!-- 2-15-1 표준 html 구조 생성 -->
 <html lang="ko">
 <head>
     <!-- Required meta tags -->
@@ -11,15 +12,20 @@
     <title>Hello, sbb!</title>
 </head>
 <body>
-<!-- 네비게이션바 -->
+<!-- 3-1-1 내비게이션 바 생성 -->
+<!-- 3-1-4 내비게이션 바 적용 -->
 <nav th:replace="~{navbar :: navbarFragment}"></nav>
 <!-- 기본 템플릿 안에 삽입될 내용 Start -->
 <th:block layout:fragment="content"></th:block>
 <!-- 기본 템플릿 안에 삽입될 내용 End -->
-<!-- Bootstrap JS -->
+
+<!-- 3-1-2 Bootstrap JS 적용~ -->
 <script th:src="@{/bootstrap.min.js}"></script>
+<!-- ~3-1-2 Bootstrap JS 적용 -->
+<!-- 3-9-9 JS 적용~ -->
 <!-- 자바스크립트 Start -->
 <th:block layout:fragment="script"></th:block>
 <!-- 자바스크립트 End -->
+<!-- ~3-9-9 JS 적용 -->
 </body>
 </html>

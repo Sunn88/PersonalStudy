@@ -9,6 +9,7 @@ import jakarta.persistence.Id;
 import lombok.Getter;
 import lombok.Setter;
 
+//3-6-1 회원 엔티티 생성
 @Getter
 @Setter
 @Entity
