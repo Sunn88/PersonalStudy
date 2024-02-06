@@ -25,4 +25,4 @@
     - 데이터 형식 : XML, 고정 Format, 가변 Format
     - 통신 규약 : TCP/IP, X.25
     - 연계 유형 : EAI, FEP
-    
+- EAI(Enterprise Application Integration, 기업 애플리케이션 통합) : 기업 내의 컴퓨터 애플리케이션들을 현대화, 통합, 조정하는 것을 목표로 세운 계획, 방법 및 도구 등
