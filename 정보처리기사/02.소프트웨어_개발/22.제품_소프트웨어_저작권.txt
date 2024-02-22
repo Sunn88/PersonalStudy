@@ -1,0 +1,51 @@
+1) 제품 소프트웨어 저작권 보호
+- DRM(Digital Rights Management)
+    - 저작권 : 저작자의 권리를 보호하기 위한 제반 규정과 법률
+    - 디지털 콘텐츠의 생성에서부터 실제 사용자까지 모든 유통 과정에 걸쳐 콘텐츠를 안전하게 관리 및 보호하고 허가된 사용자만이 접근할 수 있도록 제한하는 기술
+    - 컴퓨터 소프트웨어는 무한 복제가 가능하고 원본과 복사본이 동일하게 배포될 가능성이 커 이를 방지하기 위한 기술적인 방법을 통칭함
+    - DRM의 기술적 요구사항 : 지속적 보호(Persistent Protection), 이용 편리성(Easy to Use), 유연성(Flexibility), 통합의 용이성(Seamless)
+- DRM의 특성
+    - 디지털 미디어의 생명주기 동안 발생하는 사용 권한 관리, 과금, 유통 단계를 관리하는 기술로도 볼 수 있음
+    - 거래 투명성 : 저작권자와 콘텐츠 유통업자 사이의 거래 구조 투명성 제공
+    - 사용 규칙 제공 : 사용 가능 횟수, 유효기간, 사용 환경 등을 정의 가능, 다양한 비즈니스 모델 구성 및 콘텐츠 소비 형태 통제 제공
+    - 자유로운 상거래 제공 : 이메일, 디지털 미디어, 네트워크 등을 통한 자유로운 상거래 제공, 허가받은 사용자는 별도의 비밀키를 이용해 대상 콘텐츠를 복호화하고 허가된 권한으로 사용 가능
+- ★DRM 기술 요소
+    - 암호화(Encryption) : 콘텐츠 및 라이선스를 암호화하고, 전자서명을 할 수 있는 기술
+        - ex) PKI, Encryption, Digital Signature
+    - 키 관리(Key Management) : 콘텐츠를 암호화한 키에 대한 저장 및 배포 기술
+        - ex) Centralized, Enveloping
+    - 암호화 파일 생성(Packager) : 콘텐츠를 암호화된 콘텐츠로 생성하기 위한 기술
+        - ex) Pre-Packaging, On-the-fly Packaging
+    - 식별 기술(Identification) : 콘텐츠에 대한 식별체계 표현 기술
+        - ex) DOI, URI
+    - 저작권 표현(Right Expression) : 라이선스의 내용 표현 기술
+        - ex) ODRL, XrML/MPGE-21 REL
+    - 정책 관리(Policy Management) : 라이선스 발급 및 사용에 대한 정책 표현 및 관리 기술
+        - ex) XML, Contents Management System
+    - 크랙 방지(Tamper Resistance) : 크랙에 의한 콘텐츠 사용 방지 기술
+        - ex) Secure DB, Secure Time Management, Encryption
+    - 인증(Authentication) : 라이선스 발급 및 사용의 기준이 되는 사용자 인증 기술
+        - ex) SSO, ID/PW, 디지털 인증, 이메일 인증
+    - 인터페이스(Interface)
+        - 상이한 DRM 플랫폼 간의 상호 호환성
+        - 인터페이스 및 인증 기술
+        - ex) IPMP
+    - 이벤트 보고(Event Reporting) : 콘텐츠의 사용이 적절하게 이루어지고 있는지 모니터링 기술로 불법 유통이 탐지되었을 때 이동 경로를 추적에 활용
+    - 사용 권한(Permission) : 콘텐츠의 사용에 대한 권한을 관리하는 기술 요소
+        - ex) 퍼미션(렌더, 트랜스포트, 데리버티브)
+- DRM의 유통 과정과 구성 : p95 그림
+    - 콘텐츠 제공자(Contents Provider) : 콘텐츠를 제공하는 저작권자
+    - 콘텐츠 분배자(Contents Distributor) : 쇼핑몰 등으로 암호화된 콘텐츠 제공
+    - 패키저(Packager) : 콘텐츠를 메타 데이터와 함께 배포 가능한 단위로 묶는 기능
+    - 보안 컨테이너(Security Container) : 원본을 안전하게 유통하려는 전자적 보안 장치
+    - DRM Controller : 배포된 콘텐츠의 이용 권한을 통제
+    - Clearing House
+        - 키 관리 및 라이선스 발급 관리
+        - 디지털 저작권의 이용 생태계를 관리 및 감독하기 위한 제3의 운영 주체로서 디지털 저작물의 이용 내역을 근거로 신뢰할 수 있는 저작권료의 정산 및 분배가 이루어지는 곳
+- 디지털 콘텐츠의 사용 권한(Permission) 유형
+    - 렌더 퍼미션(Render Permission) : 사용자에게 콘텐츠가 표현되고 이용되는 권리 형태를 정의
+        - ex) 문서(뷰, 프린트 권한 제어), 동영상(플레이 권한 제어)
+    - 트랜스포트 퍼미션(Transport Permission) : 사용자들 간에 권리 교환이 이루어지는 권리 형태를 정의
+        - ex) 카피(copy), 무브(move), 론(loan)
+    - 데리버티브 퍼미션(Derivative Permission) : 콘텐츠의 추출 변형이 가능한 권한
+        - ex) 익스트랙트(Extract), 임베드(Embed), 에디트(Edit) 등
