@@ -8,13 +8,13 @@
     - 요구사항별로 관점이 다르므로 개념 모델도 다양하게 표현되어야 함
     - 대부분 UML을 사용함
     - 종류 : Use Case Diagram, Data Flow Model, State Model, Goal-Based Model, User Interactions, Object Model, Data Model
-2) UML(Unified Modeling Language)
+2) ★★★UML(Unified Modeling Language)
 - UML
     - 객체지향 소프트웨어 개발 과정에서 시스템 분석, 설계, 구현 등의 산출물을 명세화, 시각화, 문서화할 떄 사용하는 모델링 기술과 방법론을 통합해 만든 범용 모델링 언어
     - Rumbaugh의 OMT 방법론과 Booch의 Booch 방법론, Jacobson의 OOSE 방법론을 통합해 만든 모델링 개념의 공통집합
         - 객체지향 분석 및 설계 방법론의 표준 지정을 목표로 제안된 모델링 언어
     - OMG(Object Management Group)에서 표준화 공고 후 IBM, HP, Microsoft, Oracle 등이 참여해 1997.1 버전 1.0을 Release함
-- ★★럼바우(Rumbaugh) 객체지향 분석 기법
+- ★★★럼바우(Rumbaugh) 객체지향 분석 기법
     - 소프트웨어 구성 요소를 그래픽으로 모형화함
     - 객체 모델링(객체 다이어그램) : 시스템에서 요구되는 객체를 찾아내어 속성과 연산 식별 및 객체 간의 관계를 규정하여 객체를 다이어그램으로 표시함(정보 모델링)
     - 동적 모델링(상태도) : 제어 흐름, 상호작용, 동작 순서 등의 상태를 시간 흐름에 따라 상태 다이어그램으로 표시함
@@ -70,7 +70,7 @@
     - 1, 3, 6 : 1이거나 3이거나 6 객체 연결
     - n : n개 객체 연결
     - n..* : n이거나 n개 이상 객체 연결
-3) ★UML 다이어그램의 분류
+3) ★★★UML 다이어그램의 분류
 - 구조적 다이어그램(Structured Diagram) : 정적이고, 구조 표현을 위한 다이어그램
     - 클래스 다이어그램(Class Diagram) : 시스템 내 클래스의 정적 구조를 표현하고 시스템을 구성하는 클래스들 사이의 관계를 표현함
     - 객체 다이어그램(Object Diagram) : 객체 정보를 보여줌
@@ -126,7 +126,7 @@
 - UML 실체화 관계(Realization Relation)
     - 인터페이스와 실제 구현된 일반 클래스 간의 관계로 존재한느 행동에 대한 구현을 표현함
     - 한 객체가 다른 객체에게 오퍼레이션을 수행하도록 지정하는 의미적 관계임
-5) Use Case Diagram
+5) ★★★Use Case Diagram
 - Use Case Diagram의 개념
     - 객체지향 초반기 분석 작업에 작성되는 사용자의 요구를 기능적 측면에서 기술할 떄 사용하는 도구로 Actor와 Use Case로 구성됨
     - 얻어지는 결과는 개발 대상 시스템이 제공해야 하는 서비스 목록이 됨
@@ -139,7 +139,7 @@
         - 시스템이 특정한 사례(Use Case)를 실행하도록 요구할 수 있는 존재
     - 유스케이스(Use Case)
         - 시스템이 제공해야 하는 개별적인 서비스 기능
-        - 서비스는 특정 클래스ㅢ 멤버 함수로 모델링됨
+        - 서비스는 특정 클래스의 멤버 함수로 모델링됨
 - Use Case의 구성 요소 간의 관계 : 액터와 유스케이스 사이의 의미 있는 관계를 나타냄
     - 연관 관계(Association) : 유스케이스와 액터 간의 상호작용이 있음을 표현
     - 의존 관계(Dependency)
