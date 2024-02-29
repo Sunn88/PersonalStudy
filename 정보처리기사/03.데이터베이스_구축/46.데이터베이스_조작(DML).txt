@@ -1,11 +1,11 @@
-1) DML
+1) ★DML
 - DML(Data Manipulation Language, 데이터 조작어)의 개념
     - 데이터의 검색/삽입/삭제/변경에 사용되는 언어
     - 사용자와 DBMS간의 인터페이스를 제공
     - 종류 : SELECT, INSERT, DELETE, UPDATE
 2) SELECT
 - BETWEEN : 구간값 조건식
-3) 그룹 함수, 하위 질의
+3) ★그룹 함수, 하위 질의
 - 그룹 함수의 종류(집계 함수)
     - COUNT(*) : 테이블의 행의 수를 계산할 때
     - SUM(열 이름) : 하나 또는 여러 개의 열 합계를 구할 때

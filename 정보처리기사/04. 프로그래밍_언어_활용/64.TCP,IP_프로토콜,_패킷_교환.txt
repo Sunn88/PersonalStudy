@@ -2,15 +2,15 @@
 - TCP/IP(Transmission Control Protocol/Internet Protocol)
     - 인터넷에 연결된 서로 다른 기종의 컴퓨터 간에 데이터 송/수신이 가능하도록 도와주는 표준 프로토콜
     - TCP 프로토콜과 IP 프로토콜의 결합적 의미로서 TCP가 IP보다 상위층에 존재함
-    - 접속형 서비ㅐ스, 전이중 전송 서비스, 신뢰성 서비스를 제공함
+    - 접속형 서비스, 전이중 전송 서비스, 신뢰성 서비스를 제공함
     - 네트워크 환경에 따라 여러 개의 프로토콜을 허용함
     - TCP 프로토콜의 기본 헤더 크기는 20byte이고 60byte까지 확장 가능함
     - OSI 표준 프로토콜과 가까운 네트워크 구조를 가짐
-- TCP(Transmission Control Protocol)
+- ★TCP(Transmission Control Protocol)
     - OSI 7계층의 전송 계층 역할을 수행함
     - 서비스 처리를 위해 Multiplexing과 De-Multiplexing을 이용함
     - 전이중 서비스와 스트림 데이터 서비스를 제공
-- IP(Internet Protocol)
+- ★IP(Internet Protocol)
     - OSI 7계층의 네트워크 계층에 해당하며 비신뢰성 서비스를 제공함
     - 신뢰성이 부족한 비연결형 서비스를 제공하기 때문에 상위 프로토콜에서 이러한 단점을 보완해야 함
 - IP 프로토콜에서 사용하는 필드

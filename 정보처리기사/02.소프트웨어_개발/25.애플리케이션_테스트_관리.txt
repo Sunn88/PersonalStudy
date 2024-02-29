@@ -1,4 +1,4 @@
-1) 테스트 케이스
+1) ★★테스트 케이스
 - 소프트웨어 테스트
     - 소프트웨어 개발 단계에서 사용자 요구사항에 서술된 동작과 성능, 사용성, 안정성 등을 만족하는지 확인하기 위해 소프트웨어의 결함을 찾아내는 활동
     - 품질 향상 관점 : 반복적인 테스트를 거쳐 제품의 신뢰도를 향상하는 품질 보증 활동
@@ -80,10 +80,10 @@
     - 애플리케이션을 직접 실행하여 오류를 찾는 테스트
     - 소프트웨어 개발의 모든 단계에서 테스트를 수행함
     - 종류
-        - 블랙박스 테스팅 : 명세 기반
+        - ★블랙박스 테스팅 : 명세 기반
             - Boundary Value Testing, Cause-Effect Graphing, Gontrol Flow Testing, CRUD Testing, Decision Tables Tasting, Equivalence Class Partitioning, Esception Testing,
               Finite State Testing, Free Form Testing, Positive and negative Testing, Prototyping, Random Testing, Range Testing, Regression Testing, State Transition Testing, Thread Testing
-        - 화이트박스 테스팅 : 구조 기반
+        - ★화이트박스 테스팅 : 구조 기반
             - Basis Path Testing, Branch Coverage Testing, Condition Coverage Testing, Data Flow Testing, Loop Testing, Mutation Testing, Sandwich Testing, Statement Coverage Testing
 - 테스트 기반(Test Bases)에 따른 테스트
     - 구조 기반 테스트
