@@ -1,2 +1,6 @@
 출제빈도 중
 
+1) HIPO(Hierarchy plus Inout Process Output)
+- 기본 모델로 입력, 처리, 출력으로 구성되는 시스템 분석 및 설계와 시스템 문서화용 기법
+- 일반적 구성 : 가시적 도표(Visual Table of Contents), 총체적 다이어그램(Overview Diagram), 세부적 다이어그램(Detail Diagram)
+    - 구조도(가시적 도표), 개요, 도표(Index Diagram), 상세 도표(Detail Diagram)
