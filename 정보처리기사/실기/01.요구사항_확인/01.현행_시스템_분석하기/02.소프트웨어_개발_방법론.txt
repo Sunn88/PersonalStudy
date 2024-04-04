@@ -106,3 +106,19 @@
             - 릴리즈 단위를 기능별로 세분화하면 고객의 반응을 기능별로 확인할 수 있음
             - 최종 완제품일 때 고객에 의한 최종 테스트 진행 후 고객에 제공함
 - XP의 12가지 실천사항(Practice)
+    - Fine scale Feedback
+        - Pair Programming : 하나의 컴퓨터에 2명의 프로그래머가 모든 코드에 대해서 코딩과 리뷰 역할을 바꿔가며 공동 작업을 진행함
+        - Planning Game : 게임처럼 선수와 규칙, 목표를 두고 기획에 임함
+        - Test Driven Development : 실제 코드를 작성하기 전에 단위 테스트부터 작성 및 수행하며, 이를 기반으로 코드 작성
+        - Whole Team : 개발 효율을 위해 고객을 프로젝트 팀원으로 상주시킴
+    - Continuous process
+        - Continuous Integration : 상시 빌드 및 배포를 할 수 있는 상태로 유지함
+        - Design Improvement : 기능 변경 없이 중복성/복잡성 제거, 커뮤니케이션 향상, 단순화, 유연성 등을 위한 재구성 수행
+        - Small Releases
+    - Shared understanding
+        - Coding Standards
+        - Collective Code Ownership
+        - Simple Design
+        - System Metaphor
+    - Programmer welfare
+        - Sustainable Pace
