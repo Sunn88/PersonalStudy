@@ -1,0 +1,84 @@
+출제빈도 중
+
+1)SQL(Structured Query Language)의 개념
+- 관계형 데이터베이스의 표준 질의어
+- 종류 : DDL, DML, DCL
+- ORACLE에서는 DDL, DML, DCL, TCL로 구분함
+    - TCL(Transaction Control Language)
+        - 트랜잭션의 DML 작업 단위를 제어하는 명령어
+        - TCL에서는 기존 DCL의 Commit, Rollback과 함께 기록 지점을 설정하는 Savepoint로 구성됨
+
+2) DDL(Data Definition Language, 데이터 정의어)
+- 데이터베이스의 정의/변경/삭제에 사용되는 언어
+- 논리적 데이터 구조와 물리적 데이터 구조를 정의함
+- 논리적 데이터 구조와 물리적 데이터 구조 간의 사상을 정의함
+- 번역한 결과가 데이터 사전에 저장됨
+- 종류
+    - CREATE : 스키마, 도메인, 데이블, 뷰 정의
+    - ALTER : 테이블 정의 변경
+    - DROP : 스키마, 도메인, 테이블, 뷰 삭제
+
+3) DML(Data Manipulation Language, 데이터 조작어)
+- 데이터의 검색/삽입/삭제/변경에 사용되는 언어
+- 사용자와 DBMS간의 인터페이스 제공
+- 종류
+    - Select(검색) : SELECT ~ FROM ~
+    - INSERT(삽입) : INSERT INTO ~ VALUES
+    - DELETE(삭제) : DELETE FROM ~
+    - UPDATE(갱신) : UPDATE ~ SET ~
+
+4) DCL(Data Control Language, 데이터 제어어)
+- 데이터 제어 정의 및 기술에 사용되는 언어
+- 불법적인 사용자로부터 데이터를 보호
+- 무결성을 유지함
+- 데이터 복구 및 병행 제어
+- 종류
+    - GRANT : 데이터베이스 사용자에게 사용 권한 부여
+    - REVOKE : 데이터베이스 사용자로부터 사용 권한 취소
+    - ROLL : 데이터베이스 사용자의 역할에 관한 권한 부여
+
+5) TCL(Transaction Control Language, 트랜잭션 제어어)
+- 트랜잭션 제어어는 트랜잭션으 DML 작업단위를 제어하는 명령어
+- 종류 : 최근에는 Commit, Rollback을 TCL로 분리해 정의하기도 함
+    - COMMIT : 명령어로 수행된 결과를 실제 물리적 디스크로 저장하고, 명령어로 수행을 성공적으로 완료하였음을 선언
+    - ROLLBACK : 명령어로 수행에 실패하였음을 알리고, 수행된 결과를 원상복구시킴
+    - SAVEPOINT : 트랜잭션 작업 중간에 책갈피와 같이 SAVEPOINT를 저장
+
+6) 내장 SQL(Embedded SQL, 삽입 SQL)
+- 응용 프로그램에 삽입되어 사용되는 SQL
+- 내장 SQL 실행문은 호스트 실행문이 나타나는 곳이면 어디든 사용할 수 있음
+- SQL 문장의 식별자로서 'EXEC SQL'을 앞에 붙여 다른 호스트 명령문과 구별함
+- SQL문에 사용되는 호스트 변수는 콜론(:)을 앞에 붙임
+- 내장 SQL문의 호스트 변수의 데이터 타입은 이에 대응하는 데이터베이스 필드의 SQL 데이터 타입과 일치해야 함
+
+7) SQL*Plus 활용
+- SQL*Plus
+    - 오라클에서 지원되는 SQL로서 SQL문을 실행시킬 수 있는 ORACLE의 툴
+    - SQL문을 실행시키고 그 결과를 볼 수 있도록 제공하는 툴
+    - SQL은 데이터베이스에서 자료를 검색하고 수정하고 삭제하는 데이터베이스 언어라면, SQL*Plus는 출력 형식을 지정하거나 편의상 환경 설정을 하는 명령어
+- 데이터 조작 프로시저 테스트
+    - Oracle DBMS는 모든 데이터 조작 프로시저에 대한 테스트 환경으로 SQL*Plus라는 도구를 제공함
+    - 개발자는 데이터 조작 프로시저 테스트를 위해 해당 도구 활용을 위한 SQL*Plus 명령어에 대한 사전 지식이 필요함
+- SQL vs SQL*Plus
+    - SQL은 데이터를 조작하는 표준 언어
+    - SQL*Plus는 이러한 SQL을 DBMS 서버에 전송해 처리할 수 있도록 하는 Oracle에서 제공하는 도구
+    - SQL
+        - 기능 : 데이터베이스와 통신
+        - 표준 : AnSl
+        - 데이터 정의 : 가능
+        - Buffer : SQL 버퍼 사용
+        - 행 입력 : 여러 행 입력 가능
+        - 종료 문자 : ';' 사용
+        - 키워드 축약 : 불가능
+    - SQL*Plus
+        - 기능 : SQL 명령어를 서버에 전달
+        - 표준 : Oracle 개별
+        - 데이터 정의 : 불가능
+        - Buffer : SQL 버퍼 미사용
+        - 행 입력 : 여러 행 입력 불가
+        - 종료 문자 : ';' 미사용
+        - 키워드 축약 : 가능
+- SQL vs PL/SQL vs SQP*Plus
+    - SQL : 관계형 데이터베이스에 저장된 데이터에 접근하기 위한 표준언어
+    - PL/SQL : SQK문을 사용해 프로그램을 작성할 수 있도록 확장해 높은 오라클의 Procedural Language
+    - SQL*Plus : SQL 및 PL/SQL 문장을 실행할 수 있는 환경을 제공하는 오라클의 툴
