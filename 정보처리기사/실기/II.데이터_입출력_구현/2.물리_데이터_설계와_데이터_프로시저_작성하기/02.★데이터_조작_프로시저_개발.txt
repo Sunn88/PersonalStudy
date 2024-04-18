@@ -1,0 +1,41 @@
+출제빈도 중
+
+1) 데이터 저장소
+- 데이터 저장소의 정의
+    - 데이터 저장소를 생성/삭제/변경
+    - 도구 : Data Control Language, Procedure, Function, Package, Triggere
+- 데이터 저장소 연결 순서
+    - Java 환경에서 JDBC를 통해 연결 : 드라이버 로딩 -> 연결 -> 쿼리 전달 -> 결과 수신
+    - 드라이버 로딩
+        - 데이터베이스와 연결하기 위해 DBMS에서 제공하는 Jar 파일 드라이버를 메모리에 적재함
+    - 연결
+        - 적재된 드라이버를 이용해 데이터베이스 연결함
+        - String url = "jdbc:oracle:thin:@localhost:1521:ORCL";
+        - conn = DriverManager.getConnection(url, "scott", "tiger");
+    - 쿼리 전달
+        - Statement, Prepared Statement 객체를 생성해 쿼리를 데이터베이스에 전달함
+        - pstmt = conn.preparedStatement(sql);
+    - 결과 수신
+        - 앞어 전달한 쿼리를 수행한 결과를 수신함
+        - ResultSet rs = pstmt.executeQuery();
+- 데이터 저장소 연결 도수 " ODBC/JDBC, DB Connection, Driver, Result Set
+    - ODBC(Open DataBase Connectivity) : 다양한 데이터베이스를 직접 연결된 것처럼 접근하기 위한 API -> Database API Library에 연결해 사용하며 C로 구현됨
+    - JDBC(Java DataBase Connectivity) : Java를 분산 컴퓨팅 환경에 적합한 데이터베이스 개발 언어로 바꿔는 API
+* JDBC의 구성 요소
+    - Driver
+        - Driver Manager를 통해 Driver를 관리하고 적절한 시기에 사용할 수 있도록 Mapping시켜주는 객체
+        - 종류 : JDBC/ODBC Bridge, Native API, Net Protocol, JDBC, API
+    - Connection : 전달받은 DB 연결 정보를 이용해 실제 연결을 수행하는 객체
+    - Statement : String으로 입력받은 SQL 문장을 구문분석 후 DBMS에 전달하는 객체
+    - Data Source : 2PC(two phase commit), Naming Service, Pooling 등의 지원을 도와주는 Resource  관리 객체
+    - Result Set : Select 사용 시 여러 Record 정보를 한꺼번에 받아 처리할 수 있게 하는 객체
+
+2) 데이터 프로시저
+- 데이터 조작 프로시저의 개념
+    - SQL을 이용해 조작 대상 데이터 집합에서 검색, 입력, 수정, 삭제와 같은 조작을 효과적으로 할 수 있도록 고안된 언어
+    - SQL을 이용해 생성된 데이터를 조작하는 프로그램 -> 데이터베이스 내부에 저장되고 외부입력, 특정 시간 등의 일정한 조건이 되면 자동으로 수행됨
+- 데이터 조작 프로시저 작성
+    - 생성된 데이터 저장소에 데이터 입력
+    - 입력된 데이터 수정
+    - 저장된 데이터 삭제
+    - 도구 : CRUD Matrix
