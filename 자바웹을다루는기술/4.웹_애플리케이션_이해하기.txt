@@ -17,6 +17,8 @@
 - 초기 웹 애플리케이션 개발 당시 구조를 개발자가 직접 만들어 사용함
 - 현재는 이클립스 같은 통합 개발 환경에서 개발
 - 파일 탐색기를 이용한 웹 애플리케이션 기본 구조
-    - 탐색기에서 C 드라이브에 webShop 폴더 생성
-    - webShop 폴더 안에 WEB-INF 폴더 생성
-    - WEB-INF 폴더에 classes와 lib 폴더 생성
+    (1) 탐색기에서 C 드라이브에 webShop 폴더 생성
+    (2) webShop 폴더 안에 WEB-INF 폴더 생성
+    (3) WEB-INF 폴더에 classes와 lib 폴더 생성
+    (4) WEB-INF 폴더에 텍스트 파일 생성 후 이름을 web.xml로 변경
+    
