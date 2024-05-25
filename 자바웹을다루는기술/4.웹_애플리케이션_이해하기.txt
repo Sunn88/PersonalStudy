@@ -21,4 +21,8 @@
     (2) webShop 폴더 안에 WEB-INF 폴더 생성
     (3) WEB-INF 폴더에 classes와 lib 폴더 생성
     (4) WEB-INF 폴더에 텍스트 파일 생성 후 이름을 web.xml로 변경
-    
+    (5) VS Code로 web.xml 파일 열고 코드 작성
+        <?xml version="1.0" encoding="UTF-8"?>
+        <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee"
+            xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+        </web-app>
