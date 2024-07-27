@@ -47,7 +47,7 @@
             - 평문을 64bit로 블록화하고, 실제 키의 길이는 56bit을 이용함
             - 전사 공격(Brute-Force Attack)에 취약함
         - AES(Advanced Encryption Standard)
-            - DEx를 대신해 새로운 표준이 됨
+            - DES를 대신해 새로운 표준이 됨
             - 블록 크기는 128bit이고, 키 길이는 128/192/256bit임
             - SPN(Substitution-Permutation Network) 구조
         - ARIA

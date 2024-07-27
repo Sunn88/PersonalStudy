@@ -16,9 +16,9 @@
         - Statement, Prepared Statement 객체를 생성해 쿼리를 데이터베이스에 전달함
         - pstmt = conn.preparedStatement(sql);
     - 결과 수신
-        - 앞어 전달한 쿼리를 수행한 결과를 수신함
+        - 앞서 전달한 쿼리를 수행한 결과를 수신함
         - ResultSet rs = pstmt.executeQuery();
-- 데이터 저장소 연결 도수 " ODBC/JDBC, DB Connection, Driver, Result Set
+- 데이터 저장소 연결 도구 : ODBC/JDBC, DB Connection, Driver, Result Set
     - ODBC(Open DataBase Connectivity) : 다양한 데이터베이스를 직접 연결된 것처럼 접근하기 위한 API -> Database API Library에 연결해 사용하며 C로 구현됨
     - JDBC(Java DataBase Connectivity) : Java를 분산 컴퓨팅 환경에 적합한 데이터베이스 개발 언어로 바꿔는 API
 * JDBC의 구성 요소

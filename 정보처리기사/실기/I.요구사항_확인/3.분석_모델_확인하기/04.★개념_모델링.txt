@@ -50,7 +50,7 @@
     - UML에서 제공하는 기본 요소 외에 추가적인 확장 요소를 표현할 때 사용
     - UML 확장 모델에서 스테레오 타입 객체를 표현할 때 사용하는 기호는 쌍 꺾쇠와 비슷하게 생긴 일러멧(<<>>)리며, 길러멧 안에 확장 요소를 적음
 - UML 접근제어자
-    - public : + " 어떤 클래스의 객체에서 든 접근 가능
+    - public : + : 어떤 클래스의 객체에서 든 접근 가능
     - private : - : 해당 클래스로 생성된 객체만 접근 가능
     - protected : # : 해당 클래스와 동일 패키지에 있거나 상속 관계에 있는 하위 클래스의 객체들만 접근 가능
     - package : ~ : 동일 패키지에 있는 클래스의 객체들만 접근 가능
@@ -77,11 +77,12 @@
     - 종류
         - 유스 케이스 다이어그램(Use Case Diagram) : 사용자 관점에서 시스템 행위를 표현함
         - 활동 다이어그램(Activity Diagram) : 업무 처리 과정이나 연산이 수행되는 과정을 표현함
-        - 콜라보레이션 다이어그램(Collaboration Diagram) : 순차 다이어그램과 같으며 무델링 공간에 제약이 없어 구조적인 면을 중시함
+        - 콜라보레이션 다이어그램(Collaboration Diagram) : 순차 다이어그램과 같으며 모델링 공간에 제약이 없어 구조적인 면을 중시함
         - 상태 머신 다이어그램(State Machine Diagram) : 객체의 생명주기를 표현함
         - 상호작용 다이어그램(Interaction Diagram)
             - 순차 다이어그램(Sequence Diagram) : 시간 흐름에 따른 객체 사이의 상호작용을 표현함
-                - 요소 : 생명선(LifeLine), 통로(Gate), 상호작용(Interaction Fragment), 발생(Occurrence), 실행(Execution), 상태불변(State Invariant), 상호작용(Interaction Use), 메시지(Messages), 활성(Activations), 객체(Entity), Actor
+                - 요소 : 생명선(LifeLine), 통로(Gate), 상호작용(Interaction Fragment), 발생(Occurrence), 실행(Execution), 상태불변(State Invariant),
+                         상호작용(Interaction Use), 메시지(Messages), 활성(Activations), 객체(Entity), Actor
             - 통신 다이어그램(Communication Diagram) : 객체 사이의 관계를 중심으로 상호작용을 표현함
             - 상호작용 개요 다이어그램(Interaction Overview Diagram) : 여러 상호작용 다이어그램 사이의 제어 흐름을 표현함
             - 타이밍 다이어그램(Timing Diagram) : 객체 상태 변화와 시간 제약을 명시적으로 표현함
