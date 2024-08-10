@@ -1,0 +1,15 @@
+aws 설정법
+
+지역시간 설정
+time_zone = Asia_Seoul
+
+문자인코딩(utf8mb4)
+character_set_(client, connection, database, filesystem, results, server)
+collation_(connection, server)
+
+연결가능횟수
+max_connections = 1500
+
+트리거 권한
+log_bin_trust_function_creater = 1
+
