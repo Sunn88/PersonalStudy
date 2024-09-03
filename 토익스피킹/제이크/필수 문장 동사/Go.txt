@@ -44,3 +44,4 @@ Many cars and people are going along the street. - 많은 자동차와 사람들
 
 go bankrupt - 파산하다
 The company went bankrupt. - 그 회사는 파산했습니다.
+Eventually, the company went bankrupt after 3 years. - 결국 그 회사는 3년 후 파산했습니다.
