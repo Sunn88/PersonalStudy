@@ -30,7 +30,7 @@ Part2 사진 묘사
         - In the middle of the picture,
         - On the right side of the picture,
         - On the left side of the picture,
-        - Inthe background of the picture,
+        - In the background of the picture,
         - In the foreground of the picture,
     - 위치 설명 표현2
         - Next to A,
