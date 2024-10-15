@@ -126,5 +126,5 @@
         - Apache 재단 소유 SW 적용을 위해 제공하는 라이선스
         - 소스코드 수정 배포 시 Apache 2.0을 포함해야 함
         - ex) Android, HADOOP
-        - HADOOP : 다수의 저렴한 컴퓨터를 하나처러 ㅁ묶어 대량 데이터(Big Data)를 처리하는 기술
+        - HADOOP : 다수의 저렴한 컴퓨터를 하나처럼 묶어 대량 데이터(Big Data)를 처리하는 기술
         
