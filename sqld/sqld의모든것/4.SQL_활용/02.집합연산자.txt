@@ -1,0 +1,34 @@
+- 집합연산자 : 두 테이블에 대한 집합 연산(합집합, 교집합 등)을 수행하는 연산자
+- JOIN이 특정한 기준키를 가지고 두 테이블에 대한 집합 연산을 수행하는 것과 달리 특정한 기준키 없이 두 테이블의 레코드들에 대해 연산 수행
+    - 두 테이블의 칼럼 구성, 즉 스키마가 동일해야 함
+    - 스키마 구성은 동일하나 칼럼의 이름은 다를 수 있는데 이때 반환되는 칼럼 이름은 첫 번쨰 테이블을 따름
+
+1. UNION ALL / UNION
+- 합집합 연산을 수행함
+    - 두 테이블에 포함된 레코드들을 모두 포함시킴
+- 중복 레코드 : 두 테이블 모두에 포함된 공통의 레코드
+- UNION ALL : 중복 레코드들을 중복된 개수만큼 그대로 포함시킴
+- UNION : 중복 레코드를 하나만 포함시킴
+- UNION을 실행하면 한족 테이블 내에서의 중복까지 제거됨
+    SELECT NAME, TEL, CLASS FROM CLUB1
+    UNION ALL SELECT NAME, TEL, CLASS FROM CLUB2;
+        - UNION ALL로 두 테이블을 병합함
+    SELECT NAME, TEL, CLASS FROM CLUB1
+    UNION SELECT NAME, TEL, CLASS FROM CLUB2;
+        - UNION으로 두 테이블을 병합함
+    
+2. INTERSECT
+- 교집합 연산을 수행함
+    - 두 테이블에 공통적으로 포함된 레코드만 포함시킴
+    SELECT NAME, TEL, CLASS FROM CLUB1
+    INTERSECT SELECT NAME, TEL, CLASS FROM CLUB2;
+        - INTERSECT로 두 테이블을 병합함
+        
+3. MUNIS / EXCEPT
+- 차집합 연산을 수행함
+    - 왼쪽 테이블에서 두 테이블에 공통적으로 포함된 레코드들을 제외시킨 결과 반환
+    SELECT NAME, TEL CLASS FROM CLUB1
+    MINUS SELECT NAME, TEL, CLASS FROM CLUB2;
+        - MINUS 대신 EXCEPT를 사용해도 됨
+        - 왼쪽 테이블에서 오른쪽 테이블을 제외한 결과 출력
+        

@@ -1,0 +1,44 @@
+- DCL(Data Control Language) : 데이터 제어 언어
+    - 사용자를 생성하고 권한을 부여하는 작업 수행
+
+1. USER 관련 명령어
+- 데이터베이스 생성 후, 데이터를 읽고 쓰려면 계정(USER)이 필요함
+- 계정을 생성하고 변경하며 삭제하는 명령어
+- USER 생성
+    CREATE USER 사용자1 IDENTIFIED BY 패스워드1;
+    - 사용자1이란 USER가 이미 있을 경우 ALTER USER 사용
+- USER 변경
+    ALTER USER 사용자1 IDENTIFIED BY 패스워드1;
+- USER 삭제
+    DROP USER 사용자1;
+
+2. 권한 관련 명령어
+- 데이터베이스에 접근 권한 부여
+- GRANT
+    GRANT 권한1 [ON 테이블1] TO 사용자1 [WITH GRANT OPTION];
+    - 특정 테이블에 대해서만 부여하려면 ON 옵션 추가
+    - WITH GRANT OPTIONㅇ르 추가하면 권한을 받는 사용자가 다른 사용자에게 자신이 부여받은 권한을 줄 수 있음
+    - 지정할 수 있는 권한은 DBMS에 따라 여러가지
+    - 권한의 종류
+        - CREATE USER : 사용자 생성 권한
+        - ALTER USER : 사용자 정보 변경 권한
+        - DROP USER : 사용자 삭제 권한
+        - CREATE SESSION : 데이터베이스 접속 권한
+        - ALTER SESSION : 데이터베이스 접속 상태에서 환경 값 변경 권한
+        - CREATE TABLE : 자신 소유의 테이블 생성 권한
+        - CREATE ANY TABLE : 임의의 스키마 소유 테이블 생성 권한
+- REVOKE
+    REVOKE 권한1 [ON 테이블1] FROM 사용자1 [RESTRICT / CASCADE];
+    - RESTRICT는 해당 권한을 회수할 때 다른 권한도 같이 회수되어야 하는 경우, 즉 다른 권한에 의존적인 경우 본 권한회수 명령이 수행되지 않음
+    - CASCADE는 해당 권한을 회수할 때 의존적인 다른 권한까지 함께 회수
+
+3. ROLE 관련 명령어
+- 일반적으로 데이터베이스를 관리할 때 몇 가지 권한을 묶어서 패키지를 만든 다음 이를 각 계정에 부여함
+- ROLE : 권한 패키지
+- 생성 및 사용 방법
+    - ROLE_MGR이라는 이름의 ROLE 생성
+        CREATE ROLE ROLE_MGR;
+    - 생성된 ROLE_MGR에 세션 연결, 테이블 생성, 사용자 생성 권한 부여
+        GRANT CREAT SESSION, CREATE TABLE, CREATE USER TO ROLE_MGR;
+    - ROLE_MGR 역할을 사용자에게 부여
+        GRANT ROLE_MGR TO USER1;

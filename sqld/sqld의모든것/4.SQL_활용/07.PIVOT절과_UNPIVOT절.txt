@@ -1,0 +1,22 @@
+- 피벗 : 테이블의 행과 열을 전환해 테이블을 재구성하는 것
+
+1. PIVOT절
+- 행을 열로 바꿈
+    - 지정된 칼럼의 각 행 속성값들이 새로운 칼럼 헤더가 되고 이에 맞게 전체 속성값들이 재배치됨
+    SELECT *
+    FROM (SELECT E.JOB, D.DNAME
+        FROM EMPE, DEPT D
+        WHERE E.DEPTNO = D.DEPTNO)
+    PIVOT (COUNT(*) FOR DNAME IN ('ACCOUNTING' AS ACCOUNTING,
+                                    'RESEARCH' AS RESEARCH,
+                                    'SALES' AS SALES));
+        - PIVOT 내부적으로 첫 번째 칼럼에 대해 GROUP BY 연산이 수행됨
+
+2. UNPIVOT절
+- 열을 행으로 바꿈
+    - 칼럼 헤더들이 한 칼럼의 각 행 속성값이 되고, 이에 맞게 전체 속성값들이 재배치됨
+    SELECT 계절, 연도, 기온
+    FROM (SELECT * FROM 평균기온)
+    UNPIVOT (기온 FOR 연도 IN (Y2018 AS '2018년',
+                                ....));
+                                

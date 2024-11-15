@@ -1,0 +1,68 @@
+- 행과 행 간의 관계를 나타내는 연산을 쉽게 하기 위한 함수
+    - 하나의 칼럼 내에서 각 행에 대해 연산을 수행한다는 점에서 GROUP BY 연산과 유사
+        - GROUP BY 연산은 각 행을 대상으로 연산을 수행한 다음 새로운 구성을 만듦
+        - 윈도우 함수는 각 행의 기존 구성을 유지한 상태로 해당 행에 대해 새로운 값을 추가하거나 기존의 값을 변경함
+- 모든 윈도우 함수는 OVER 키워드와 함께 사용됨
+    
+1. 순위함수
+- RANK : 동일 순위는 같은 순위값을 가짐
+    - 순위값은 앞 순위까지의 누적 개수 +1이 됨
+- DENSE_RANK : 동일 순위는 같은 순위값을 가짐
+    - 순위값은 단순하게 앞 순위 +1이 됨
+- ROW_NUMBER : 동일 순위라도 각각의 행이 고유한 순위값을 가짐
+    SELECT MPG, COUNT(*), RANK() OVER(ORDER BY COUNT(*) DESC) AS RANK
+    FROM MTCARS
+    GROUP BY MPG;
+        - GROUP BY->SELECT 순으로 실행됨
+
+2. 집계함수
+- OVER절을 사용해 파티션 별로 집계하거나 누적 집게를 계산할 수 있음
+- COUNT : 값이 NULL이니 행을 제외한 행의 개수를 파티션 별로 집계하거나 누적 집계를 계산해 반환함
+- SUM : 입력된 칼럼에 대해 파티션 별 합계를 구하거나 누적 합계를 계산해 반환함
+- AVG : 입력된 칼럼에 대해 파티션 별 평균을 구하거나 누적 평균을 계산해 반환함
+- MIN : 입력된 칼럼에 대해 파티션 별 최솟값을 반환함
+- MAX : 입력된 칼럼에 대해 파티션 별 최댓값을 반환함
+    SELECT NAME,
+        CYL,
+        COUNT(*) OVER(PARTITION BY CYL) AS PART_CYL_CNT
+    FROM MTCARS
+    WHERE CYL <= 6;
+        - 실린더 수가 6 이하인 레코드들에 대해 실린더 수로 파티션을 나누고 파티션 별 레코드 수를 조회함
+    SELECT NAME,
+        CYL,
+        MPG,
+        MAX(MPG) OVER(PARTITION BY CYL) AS PART_MAX_MPG
+    FROM MTCARS
+    WHERE CYL <= 6;
+        - 실린더 수가 6 이하인 레코드들에 대해 실린더 수로 파티션을 나누고 파티션별 연비 최댓값을 조회함
+
+3. 행 순서함수
+- FIRST_VALUE : 파티션 별로 그룹핑해 가장 처음 값 반환
+- LAST_VALUE : 파티션 별로 그룹핑해 가장 마지막 값 반환
+- LAG : 입력된 인자의 값만큼 이전 행의 값 반환
+- LEAD : 입력된 인자의 값만큼 이후 행의 값 반환
+- SQL Server에서는 행 순서함수를 지원하지 않음
+    SELECT NAME,
+        CYL,
+        MPG,
+        FIRST_VALUE(MPG) OVER(PARTITION BY CYL) AS PART_FIRST_MPG
+    FROM MTCARS
+    WHERE CYL <= 6;
+        - 실린더 수가 6 이하인 레코드들에 대해 실린더 수로 파티션을 나누고 각 파티션에서 첫 번째 연비값 조회
+    SELECT NAME,
+        CYL,
+        MPG,
+        LAG(MPG, 2) OVER(ORDER BY MPG) AS MPG_2
+    FROM MTCARS
+    WHERE CYL <= 6;
+        - 실린더 수가 6 이하인 레코드들에 대해 연비 값을 오름차순 정렬하고 원래의 MPG 값과 2행 앞의 MPG 값 조회
+
+4. 비율 함수
+- 파티션 별로 합계를 구한 후, 그에 대한 비율을 구하는 함수
+    - 누적 백분율, 순서별 백분율 등 다양한 연산 수행 함수 제공
+- CUME_DIST : 파티션 별 합계에 대한 누적 백분율을 소수점 단위로 계산해 반환함 -> 마지막 행의 값이 1이 됨
+- PERCENT_RANK : 파티션 별로 그룹핑해 백분위 순위값을 반환함 -> 가장 첫 행이 -, 마지막 행이 1이 됨
+- NTILE : 파티션을 N등분해 1부터 N까지의 등급 값 반환
+    - 전체 개수를 N으로 나누고 나머지를 앞 등급 순서로 1씩 배분해 등급별 개수를 정함
+    - ex) 10개를 4등급으로 나누면 각 등급별 개수는 3, 3, 2, 2가 됨
+- RATIO_TO_REPORT : 파티션 별 합계에 대한 비율을 계산해 반환함

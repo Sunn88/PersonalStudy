@@ -1,0 +1,85 @@
+- DDL(Date Definition Language) : 데이터 정의 언어
+    - 데이터의 구조, 즉 스키마를 정의하고 관리하는 SQL 명령어
+- ERD로 그려진 데이터 모델링은 논리적 모델링
+    - 엔터티와 속성, 관계를 특정 DBMS에 의존적이지 않게 설계하는 것
+- DDL을 사용해 이를 특정 DBMS에 실제로 적용하는 것은 물리적 모델링
+- DDL 사용해 테이블 생성시 지정해야 할 요소
+    - 테이블 이름
+    - 칼럼 이름
+    - 칼럼 데이터 타입
+        - DBMS의 종류에 따라 달라지므로 기종에 맞게 사용
+    - 칼럼 데이터 크기
+    - 제약조건(Constraints) : OK, NOT NULL 등 칼럼이 가지는 제약조건
+
+1. CREATE
+- 테이블 생성
+    CREATE TABLE 테이블1(
+        칼럼1 데이터타입1[(데이터크기1)] [DEFAULT 기본값1] [NULL/NOT NULL]
+        [[, 칼럼2 데이터타입2[(데이터크기2)] [DEFAULT 기본값2] [NULL/NOT NULL]] ...]
+        [, CONSTRAINT 이름1 PRIMARY KEY (칼럼1)]
+        [, CONSTRAINT 이름2 FOREIGN KEY (칼럼2) REFERENCES 테이블2(칼럼3)]
+    );
+- 주의사항
+    - 테이블 이름은 해당 데이터베이스 내에서 고유해야 함
+    - 칼럼 이름은 해당 테이블 내에서 고유해야 함
+    - 칼럼에 대해 이름, 데이터 타입은 필수 지정
+    - DEFAULT, NULL, NOT NULL 등은 선택적 지정
+    - 이름을 지정하는 경우 숫자 시작 불가능
+    - 칼럼의 정의는 괄호 안에 기술함
+    - 각 칼럼은 콤마로 구분
+    - 세미콜론으로 끝남
+    - 테이블 이름은 해당 테이블이 담는 데이터의 성격에 맞는 이름 사용
+    - 칼럼의 이름은 통일성 필요
+- PRIMARY KEY : PK인 칼럼 지정
+    - NULL 값 불가능
+    - 모든 값이 고유(UNIQUE)해야 함
+    - 자동으로 UNIQUE INDEX가 생성됨
+- FOREIGN KEY : FK 또는 외래키
+    - 다른 테이블의 PK로부터 가져온 칼럼을 지정
+    - FK를 지정해 논리적 모델링에서 정의한 관계 표현
+    - FK 지정 시 참조 대상인 칼럼에 대해 참조 무결성 제약조건 지정 가능
+        - DELETE/MODIFY ACTION
+            - CASCADE : 부모의 값 삭제 시 자식의 값도 같이 삭제됨 
+                - 해당 칼럼의 값만 삭제되는 것이 아니라 행 전체가 삭제됨
+            - SET NULL : 부모의 값 삭제 시 자식의 해당 칼럼은 NULL 값이 됨
+            - SET DEFAULT : 부모의 값 삭제 시 자식의 해당 칼럼은 기본값으로 변경됨
+            - RESTRICT : 자식 테이블에 해당 데이터가 PK로 지정되지 않은 경우에만 부모 테이블에서 삭제 및 수정 가능
+            - NO ACTION : 제약조건을 위배한 경우 동작이 실패하며 아무 액션도 취하지 않음
+        - INSERTT ACTION
+            - AUTOMATIC : 부모 테이블에 PK가 없는 경우 PK 생성 후 자식 테이블에 값이 입력됨
+            - SET NULL : 부모 테이블에 PK가 없는 경우 자식 테이블에 NULL 값이 입력됨
+            - SET DEFAULT : 부모 테이블에 PK가 없는 경우 자식 테이블에 기본값이 입력됨
+            - DEPENDENT : 부모 테이블에 PK가 존재할 때만 자식 테이블에 값 입력을 허용함
+            - NO ACTION : 제약조건을 위배한 경우 동작이 실패하며 아무 액션도 취하지 않음
+- UNIQUE KEY : PK와 마찬가지로 모든 값이 고유해야 하는 조건 지정
+    - PK와 달리 NULL 값을 가질 수 있음
+- NOT NULL : NULL 값을 가질 수 없음
+- CHECK : 가질 수 있는 값을 특정 범위로 제한함
+    CONSTRAINT CHK_GENDER CHECK(GENDER IN ('M', 'F'))
+
+2. ALTER
+- 생성된 테이블의 스키마를 변경함
+- 칼럼 추가
+    ALTER TABLE 테이블1 ADD 칼럼1 데이터타입1[(데이터크기1)];
+    - 기존 칼럼들의 끝에 추가됨
+- 칼럼 삭제
+    ALTER TABLE 테이블1 DROP COLUMN 칼럼1;
+    - ALTER로 삭제된 칼럼은 복구 불가
+- 칼럼 변경
+    ALTER TABLE 테이블1 MODIFY(
+        칼럼1 데이터타입1[(데이터크기1)] [DEFAULT 기본값1] [NULL/NOT NULL]
+    );
+    - 칼럼에 저장된 데이터가 하나도 없는 경우에만 데이터 타입 변경이 가능
+    - DEFAULT를 지정할 경우, 변경 이후에 추가되는 레코드에 대해서만 기본값이 적용됨
+    - NOT NULL로 변경하려면 현재 칼럼의 값 중 NULL 값이 없어야 함
+- 칼럼 이름 변경
+    ALTER TABLE 테이블1 RENAME COLUMN 칼럼1 TO 칼럼2;
+- 제약조건 추가
+    ALTER TABLE 테이블1 ADD CONSTRAINT 이름1 제약조건(칼럼1);
+- 테이블 삭제
+    DROP TABLE 테이블1 [CASCADE CONSTRAINTS];
+    - 다른 테이블에서 테이블1을 참조하고 있는 경우 CASCADE CONSTRAINTS를 명시하지 않으면 삭제 불가
+- 테이블 초기화
+    TRUNCATE TABLE 테이블1;
+    - 테이블의 데이터만 삭제하고 스키마는 그대로 둠
+    - DELETE와 달리 롤백 불가, 저장 공간이 릴리즈됨

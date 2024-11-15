@@ -1,0 +1,36 @@
+- 계층형 데이터 모델 : 계층적으로 구성된 데이터에서 각 레코드가 하나의 노드가 되고 노드의 부모-자식 관계를 정의한 일종의 트리 구조 데이터 모델링
+    - 상위 노드(부모노드)에서 하위 노드(자식 노드)로 연쇄적으로 데이터에 접근해서 결과 조회 시 사용
+
+1. 계층형 질의
+- 계층 구조를 가지는 칼럼을 대상으로 데이터를 출력할 때 사용할 수 있는 특별한 키워드 제공
+- LEVEL : 전체 계층 구조에서 현재의 레벨 또는 깊이 반환 -> 루트 노드가 1이 되며 한 레벨 내려갈 때마다 1씩 증가
+- SYS_CONNECT_BY_PATH : 최상위 루트 노드로부터 현재 노드까지의 경로 출력
+- START WITH : 경로의 시작이 되는 루트 노드가 되는 조건 지정
+- CONNECT BY : 부모 노드로부터 자식 노드로의 연결 지정
+- CONNECT_BY_ROOT : 루트 노드의 지정된 칼럼값 반환
+- CONNECT_BY_ISLEAF : 가장 말단 노드(리프 노드)이면 1 반환, 그 외에는 0 반환
+- PRIOR : 바로 상위 부모 노드 반환
+- NOCYCLE : 사이클 발생 이후 데이터를 전개하지 않음으로 무한 루프 방지
+- ORDER SIBLINGS BY : 같은 레벨의 형제 노드끼리 정렬함
+    - ORDER BY절은 전체를 정렬함
+* 순방향 전개
+    - CONNECT BY PRIOR 자식 = 부모
+        - 상위 노드로 부모를 지정하므로 부모->자식으로 이어짐
+* 역방향 전개
+    - CONNECT BY PRIOR 부모 = 자식
+        - 상위 노드로 자식을 지정하므로 자식->부모로 이어짐
+    SELECT *
+    FROM (SELECT LEVEL AS LVL, EMPNO, ENAME, JOB, PRIOR ENAME AS MANAGER, PRIOR JOB AS MANAGER_JOB
+        FROM EMP
+        START WITH MGR IS NULL
+        CONNECT BY PRIOR EMPNO = MGR)
+    ORDER BY LVL, MANAGER, JOB;
+
+2. 셀프 조인
+- 셀프 조인 : 같은 테이블에 대해서 조인을 수행하도록 쿼리 작성
+- 계층적인 분류 값을 가지는 칼럼을 다룰 때 사용하면 전체 분류 체계를 계층적으로 조회해 출력하는 것이 가능함
+- 셀프 조인을 사용하면 계층의 깊이가 깊어질수록 쿼리가 반복되고 길어짐 -> 계층형 질의를 사용해 해결
+     SELECT B.EMPNO, B.ENAME, B.JOB, A.ENAME AS BOSS, A.JOB AS BOSS_JOB
+     FROM EMP A, EMP B
+     WHERE A.EMPNO = B.MGR;
+     

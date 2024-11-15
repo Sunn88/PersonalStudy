@@ -1,0 +1,24 @@
+- TOP N 쿼리 : 상위 N 순위까지를 추출하는 쿼리
+    - 기본적으로 순위 함수(RANK, DENSE_RANK, ROW_NUMBER)를 사용해 쿼리 작성 가능
+
+1. ROWNUM 함수
+- 현재 저장된 데이터를 그대로 두고 각 행에 순차적인 번호를 붙여주는 함수
+    - 테이블의 첫 행부터 차례로 순회하면서 값을 반환하기 때문에 중간을 건너뛰고 값을 가져올 수 없음
+    - WHERE절에 ROWNUM을 사용할 경우 조건식이 FALSE가 되면 순회를 멈추고 결과를 반환함
+    SELECT ROWNUM, EMPNO, ENAME, SAL
+    FROM EMP
+    WHERE ROWNUM = 5;
+        - ROWNUM에 대해 대소비교가 아닌 등식 비교를 하면 아무런 결과를 가져오지 못함
+            - ROWNUM이 1일 때 조건이 FALSE가 되어 더 이상 순회하지 않고 바로 결과를 반환하기 때문
+- ORDER BY와 같이 쓸 경우 ORDER BY가 수행되기 전에 먼저 수행됨
+    - 정렬 수행 후 번호를 매기고 싶으면 ROW_NUMBER 사용
+
+2. 윈도우함수의 순위함수
+    SELECT *
+    FROM (SELECT RANK() OVER(ORDER BY SAL DESC) AS RANK,
+        EMPNO,
+        ENAME,
+        SAL
+    FROM EMP)
+    WHERE RANK <= 5;
+        - 서브쿼리에서 SAL이 큰 순서대로 RANK를 사용해 순위를 매긴 후, 상위 5순위까지 출력함
