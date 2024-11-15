@@ -1,1 +1,176 @@
 - 함수 : 입력된 값에 대해 어떤 연산을 수행한 후 그 결과를 반환하는 일련의 코드 덩어리
+- SQL에는 DBMS별로 이미 만들어져 제공되는 내장함수와 사용자가 직접 SQL문을 작성해 함수의 코드를 정의하는 사용자 정의 함수가 있음
+- 단일행 함수 : 하나의 행에 대해 연산을 수행한 후 결과를 반환하는 함수
+    - 각 행에 대해 개별적으로 연산이 이루어짐
+    - 입력되는 인자는 여러 개일 수 있으나 연산 결과는 단일값을 반환함
+    - 1:M 조인에서도 M쪽의 각각의 행에 대해 단일행 함수를 사용할 수 있음
+- 다중행 함수 : 여러 행에 대해 연산을 수행해 결과를 반환하는 함수
+    - 집계함수(COUNT, SUM, AVG 등), 그룹함수(ROLLUP, CUBE 등), 윈도우함수(RANK, ROW_NUMBER 등)
+    - 여러 입력 인자에 대해 단일값을 반환한다는 점은 단일행 함수와 같음
+
+1. 문자함수
+- 문자열을 대상으로 한 연산을 수행하는 함수
+- LOWER : 입력된 문자열을 모두 소문자로 변환해 반환함
+- UPPER : 입력된 문자열을 모두 대문자로 변환해 반환함
+- CHR : 입력되는 ASCII 코드값에 대응하는 문자를 반환함
+    - SQL Server에서는 CHR대신 CHAR 사용
+- TRIM : 문자열을 양 끝단에서 공백 또는 지정된 문자열을 제거하고 반환함
+    - TRIM([[arg1] [arg2] FROM] arg3)
+        - arg1 : LEADING / TRAILING / BOTH, 생략될 경우 기본값은 BOTH
+        - arg2 : 제거할 특정 문자 또는 문자열 -> arg2가 생략되면 공백 제거
+        - arg3 : 문자열값 또는 문자열형의 칼럼
+    - SELECT TRIM(' GOOD ') FROM DUAL;
+        - 문장의 앞, 뒤에서 공백 제거
+    - SELECT TRIM(LEADING '가' FROM '가나다라') FROM DUAL;
+        - '가나다라'의 앞에서 '가' 제거
+    - SELECT TRIM(TRAILING '라' FROM '가나다라') FROM DUAL;
+        - '가나다라'의 뒤에서 '라' 제거
+    - SELECT TRIM(BOTH '가' FROM '가나다라가') FROM DUAL;
+        - '가나다라가'의 앞, 뒤에서 '가' 제거
+- LTRIM : 문자열의 왼쪽 끝에서 공백 또는 지정된 문자열을 제거하고 반환함
+    - LTRIM(arg1 [, arg2])
+        - arg1 : 문자열값 또는 문자열형의 칼럼
+        - arg2 : 제거할 특정 문자 또는 문자열 -> arg2가 생략되면 공백 제거
+    - SQL Server에서는 arg2 인자가 없으며 공백 제거만 가능함
+    - SELECT LTRIM('가나다라', '가') FROM DUAL;
+        - '가나다라'의 앞에서 '가' 제거
+- RTRIM : 문자열의 오른쪽 끝에서 공백 도는 지정된 문자열을 제거하고 반환함
+    - RTRIM(arg1 [, arg2])
+        - arg1 : 문자열값 또는 문자열형의 칼럼
+        - arg2 : 제거할 특정 문자 또는 문자열 -> arg2가 생략되면 공백 제거
+    - SQL Server에서는 arg2 인자가 없으며 공백 제거만 가능함
+- SUBSTR : 입력된 문자열의 부분 문자열을 추출해 반환함
+    - SUBSTR(arg1, arg2 [, arg3])
+        - arg1 : 문자열값 도는 문자열형의 칼럼
+        - arg2 : 부분 문자열을 추출할 시작점을 나타내는 정수
+        - arg3 : 추출할 부분 문자열의 길이를 나타내는 정수 -> 생략시 시작점부터 문자열 끝까지 반환함
+    - SELECT SUBSTR('Good Morning', 1, 4) FROM DUAL;
+        - 'Good Morning'의 첫 번째 문자부터 4개의 문자 추출
+- LENGTH : 입력된 문자열의 길이를 반환함
+    - LENGTH(arg)
+        - arg : 문자열값 도는 문자열형의 칼럼
+    - SQL Server에서는 LENGTH 대신 LEN 사용
+    - SELECT LENGTH('Good Morning') FROM DUAL;
+- REPLACE : 입력된 문자열에서 특정 문자열을 찾아 다른 문자열로 대체해 반환함
+    - REPLACE(arg1, arg2 [, arg3])
+        - arg1 : 문자열값 또는 문자열형의 칼럼
+        - arg2 : 변경할 대상 문자열
+        - arg3 : 변경된 후의 문자열 -> 생략시 대상 문자열을 삭제함
+    - SELECT REPLACE('Good Morning', 'Morning', 'Afternoon') FROM DUAL;
+        - 'Good Morning'에서 'Morning'을 'Afternoon'으로 교체
+    - SELECT REPLACE('Good Morning', 'Good ') FROM DUAL;
+        - 'Good Morning'에서 'Good '을 삭제
+
+2. 숫자함수
+- ABS : 절대값을 반환함
+    - ABS(arg1)
+        - arg1 : 숫자형값 또는 숫자형 칼럼
+    - SELECT ABS(-2.3) FROM DUAL;
+        - -2.3의 절대값인 2.3 반환
+- MOD : 첫 번째 인자를 두 번째 인자로 나눈 나머지를 계산해 반환함
+    - MOD(arg1, arg2)
+        - arg1 : 숫자형값 또는 숫자형 칼럼
+        - arg2 : 숫자형값 또는 숫자형 칼럼
+    - SQL Server에서는 MOD 함수가 없고 대신 %(나머지 연산자)를 사용함
+    - SELECT MOD(9, 2) FROM DUAL;
+        - 9를 2로 나눈 나머지 3을 반환함
+- ROUND : 수를 반올림해 그 결과를 반환함
+    - ROUND(arg1 [, arg2])
+        - arg1 : 대상이 되는 숫자형값 또는 숫자형 칼럼
+        - arg2 : 소수점 아래 자릿수를 나타내는 정수, 이 자릿수 아래에서 반올림해 이 자릿소까지 수를 만듦 -> 생략시 기본값은 0
+    - SELECT ROUND(2.67, 1) FROM DUAL;
+        - 2.67을 소수점 아래 첫 번째까지의 수를 만들기 위해 반올림해 2.7을 반환함
+    - SELECT ROUND(2.67) FROM DUAL;
+        - 2.67을 정수로 만들기 위해 소수점 첫째에서 반올림해 3을 반환
+- TRUNC : 수를 반올림하지 않고 특정 자릿수에서 버림한 후 그 결과를 반환함
+    - TRUNC(arg1 [, arg2])
+        - arg1 : 대상이 되는 숫자형값 또는 숫자형 칼럼
+        - arg2 : 소수점 아래 자릿수를 나타내는 정수, 이 자릿수까지만 남기고 그 아래를 버림 -> 생략시 기본값은 0
+    - SELECT TRUNC(2.37, 1) FROM DUAL;
+        - 2.37을 소수점 아래 첫 번째까지만 남기고 그 이하를 버림해 2.3을 반환
+    - SELECT TRUNC(2.37) FROM DUAL;
+        - 2.37을 정수까지만 남기고 그 이하를 버림해 2를 반환
+- SIGN : 입력된 값이 양수이면 1, 음수이면 -1, 0이면 0을 반환함
+    - SIGN(arg1)
+        - arg1 : 숫자형값 또는 숫자형 상수
+    - SELECT SIGN(2.3) FROM DUAL;
+        - 2.3이 양수이므로 1을 반환
+- CEIL : 입력된 값보다 크거나 같은 최소의 정수를 반환함
+    - CEIL(arg1)
+        - arg1 : 숫자형값 또는 숫자형 칼럼
+    - SQL Server에서는 CEIL 대신 CEILING을 사용함
+    - SELECT CEIL(2.3) FROM DUAL;
+        - 2.3 이상의 최소 정수인 3을 반환
+- FLOOR : 입력된 값보다 작거나 같은 최대의 정수를 반환함
+    - FLOOR(arg1)
+        - arg1 : 숫자형값 또는 숫자형 칼럼
+    - SELECT FLOOR(2.3) FROM DUAL;
+        - 2.3 이하의 최대 정수인 2를 반환
+- 기타 : EXP, LOG, LN, POWER, SIN, COS, TAN 등 다양한 수학 함수들이 있음
+    - 모두 숫자형 데이터 타입을 인자로 받아 해당 연산을 수행함
+
+3. 날짜함수
+- SYSDATE : 오늘의 날짜를 날짜형으로 반환함
+    - SELECT SYSDATE AS TODAY FROM DUAL;
+    - SQL Server에서는 SYSDATE 대신 GETDATE()를 사용함
+- EXTRACT : 날짜로부터 년, 월, 일을 추출해 반환함
+    - EXTRACT(arg1 FROM arg2)
+        - arg1 : YEAR / MONTH / DAY / HOUR / MINUTE / SECOND 
+        - arg2 : 날짜형값 또는 날짜형 칼럼
+    - SQL Server에서는 EXTRACT 대신 DATEPART(arg1, arg2) 함수를 사용함
+    - SELECT SYSDATE AS TODAY, EXTRACT(MONTH FROM SYSDATE) AS MON, EXTRACT(DAT FROM SYSDATE) AS DAY FROM DUAL;
+        - 오늘의 날짜를 날짜형, 월, 일 형태로 출력함
+
+4. 변환함수
+- 칼럼을 대상으로 함수나, 연산자로 연산을 수행할 때, 특별하게 요구되는 타입이 정해져 있음
+- 이 타입이 맞지 않을 때 타입의 변환이 필요함
+- 명시적 형변환 : TO_NUMBER, TO_CHAR, TO_DATE와 같이 함수를 사용해 SQL의 작성자가 형변환을 명시하는 것
+- 암시적 형변환 : 데이터베이스가 연산을 수행하면서 내부적으로 임의로 형변환을 수행함
+    - 그 결과를 명확하게 예측할 수 없을 때가 많음
+    - 성능 저하를 가져오거나 에러 발생할 수도 있으므로 주의해야함
+- TO_NUMBER : 데이터 타입을 숫자형으로 변환함
+    - TO_NUMBER(arg1)
+        - arg1 : 문자열값 또는 문자열형의 칼럼
+    - SELECT TO_NUMBER('1001') AS MEMBER_ID FROM DUAL;
+- TO_CHAR : 데이터 타입을 문자열형으로 변환함
+    - TO_CHAR(arg1 [, arg2])
+        - arg1 : 숫자형/날짜형의 값 또는 칼럼
+        - arg2 : arg1이 날짜형일 경우, 날짜 포맷을 나타내는 문자열
+    - SELECT TO_CHAR(1001) AS MEMBER_ID FROM DUAL;
+    - SELECT TO_CHAR(SYSDATE, 'YYYYMMDD') AS TODAY FROM DUAL;
+        - 오늘 날짜를 년월일(20241114) 형태의 문자열로 변환
+- TO_DATE : 데이터 타입을 날짜형으로 변환함
+    - TO_DATE(arg1, arg2)
+        - arg1 : 문자열값 또는 문자열형의 칼럼
+        - arg2 : arg1의 날짜 포맷을 나타내는 문자열
+    - SELECT TO_DATE('20240130', 'YYYYMMDD') AS TODAY FROM DUAL;
+        - '20240130' 문자열값을 년월일 형태로 해석해 날짜형으로 변환
+
+5. NULL 관련 함수
+- NVL : 첫 번째 인자가 Null이 아니면 첫 번째 인자를 그대로 반환하고 Null이면 두 번째 인자를 반환함
+    - 첫 번째와 두 번째 인자의 데이터 타입은 같아야 함
+    - NVL(arg1, arg2)
+        - arg1 : 칼럼 또는 표현식
+        - arg2 : 칼럼 또는 표현식 -> arg1과 같은 데이터 타입
+    - SQL Server에서는 NVL 대신 ISNULL을 사용함
+    - SELECT EMPNO, ENAME, NVL(COMM, 0) AS COMM FROM EMP;
+- NULLIF : 입력된 두 인자가 같으면 Null을 반환하고 다르면 첫 번째 인자를 반환함
+    - NULLIF(arg1, arg2)
+        - arg1 : 칼럼 또는 표현식
+        - arg2 : 칼럼 또는 표현식 -> arg1과 같은 데이터 타입
+    - SELECT EMPNO, ENAME, MGR, NULLIF(MGR, 7698) AS NM FROM EMP;
+        - MGR 칼럼의 값이 7698인 것을 NULL로 치환해 반환
+- COALESCE : 입력된 인자를 순서대로 평가해 NULL이 아닌 첫 번째 인자를 반환함
+    - COALESCE(are1 [[, arg2] ... ])
+        - arg1 : 칼럼 또는 표현식
+        - arg2 : 칼럼 또는 표현식 -> arg1과 같은 데이터 타입
+    - SELECT EMPNO, COALESCE(HOURLY_WAGE, SALARY, COMMISSION) AS TOTAL_SALARY FROM WAGES;
+        - HOURLY_WAGE, SALARY, COMMISION 칼럼 순으로 읽어서 NULL이 아닌 첫 번째 값을 반환
+
+6. CASE
+- CASE문 : 칼럼이 특정 값을 가지면 이를 대체하는 새 값을 반환하는 연산
+    - 실질적으로 함수와 같은 기능을 하나 함수가 아닌 구문
+    - 단순한 대응 관계를 사용자가 직접 정의할 수 있도록 해줌
+- Oracle에서는 DECODE라는 같은 기능을 하는 함수가 있음
+    - CASE WHEN 칼럼 = 값
+    - CASE 칼럼 WHEN 값

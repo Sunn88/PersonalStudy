@@ -1,0 +1,46 @@
+- SQL이 실행되는 dbms의 종류에 따라 문법이 약간씩 다름
+- ANSI SQL : 표준 문법
+- 표준 조인 : ANSI SQL의 문법에 따른 조인 쿼리
+    - 기준 조건으로 WHERE절이 아니라 ON절을 사용함
+    - FROM절에 조인의 종류를 명시함
+        - INNER JOIN, LEFT OUTER JOIN, RIGHT OUTER JOIN, FULL OUTER JOIN, NATURAL JOIN, CROSS JOIN
+    FROM 테이블1 조인 테이블2
+    ON 조건식1
+        - 테이블1 : 조인의 대상이 되는 첫 번째 테이블, 왼쪽 테이블에 해당
+        - 테이블2 : 조인의 대상이 되는 두 번째 테이블, 오른쪽 테이블에 해당
+        - 조인 : 조인의 종류 지정
+        - 조건식1 : 조인을 수행할 기준 키를 사용해 조인 조건을 명시함
+
+1. INNER JOIN
+- INNER JOIN : 교집합의 개념 -> 기준이 되는 키에 따른 칼럼값이 존재하는 것만 병합해서 결과를 만듦
+    - FROM 테이블1 INNER JOIN 테이블2 ON 조건식
+
+2. OUTER JOIN
+- OUTER JOIN : 합집합의 개념 -> 기준이 되는 키에 따른 칼럼값이 존재하지 않더라고 모든 튜플을 병합함
+- 어떤 테이블의 행들을 모두 포함시킬 것인지에 따라 LEFT OUTER JOIN, RIGHT OUTER JOIN, FULL OUTER JOIN으로 나뉨
+- LEFT OUTER JOIN : 왼쪽 테이블의 모든 행을 포함시키면서 조인을 수행함
+- RIGHT OUTER JOIN : 오른쪽 테이블의 모든 행을 포함시키면서 조인을 수행함
+- FULL OUTER JOIN : 왼쪽과 오른쪽 테이블의 모든 행을 포함하는 조인을 수행함
+
+3. NATURAL JOIN
+- 조인의 대상이 되는 두 테이블에서 같은 이름의 칼럼에 대해서는 동일한 칼럼값을 가지는 행만 병합되는 조인
+    - SELECT * FROM ACTOR MATURAL JOIN APPR;
+- SQL Server에서는 NATURAL JOIN을 지원하지 않음
+- NATURAL JOIN은 조인 조건을 내포하고 있으므로 ON절을 사용할 수 없음
+    - SELECT절의 칼럼명에도 테이블 명칭을 함께 표시할 수 없음
+- Oracle에서는 USING절을 사용해 원하는 칼럼에 대해서만 조인 조건이 되도록 할 수 있음
+    - SELECT * FROM ACTOR JOIN APPR USING (ACTOR_NO);
+
+4. CROSS JOIN
+- 왼쪽 테이블의 각 행에 대한 오른쪽 테이블 모든 행의 대응을 조합해 결과를 출력하는 조인
+    - 왼쪽 테이블의 한 행과, 오른쪽 테이블의 한 행을 조합하는 모든 경우의 수를 구함 => 카테시안 곱
+    - 왼쪽 테이블이 M행이고 오른쪽 테이블이 N행이면 CROSS JOIN의 결과는 M*N행이 됨
+- 조인의 조건이 별도로 지정되지 않음
+- 표준 조인이 아닌 경우 WHERE절 없이 FROM절에 테이블들을 나열하면 CROSS JOIN이 됨
+    SELECT S1.NAME, C1.NAME
+    FROM STUDENT S1, CLUB C1;
+    =
+    SELECT S1.NAME, C1.NAME
+    FROM STUDENT S1 CROSS JOIN CLUB C1;
+
+    
