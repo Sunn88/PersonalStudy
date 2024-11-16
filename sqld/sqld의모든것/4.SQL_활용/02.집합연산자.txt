@@ -9,7 +9,7 @@
 - 중복 레코드 : 두 테이블 모두에 포함된 공통의 레코드
 - UNION ALL : 중복 레코드들을 중복된 개수만큼 그대로 포함시킴
 - UNION : 중복 레코드를 하나만 포함시킴
-- UNION을 실행하면 한족 테이블 내에서의 중복까지 제거됨
+- UNION을 실행하면 한쪽 테이블 내에서의 중복까지 제거됨
     SELECT NAME, TEL, CLASS FROM CLUB1
     UNION ALL SELECT NAME, TEL, CLASS FROM CLUB2;
         - UNION ALL로 두 테이블을 병합함
@@ -24,7 +24,7 @@
     INTERSECT SELECT NAME, TEL, CLASS FROM CLUB2;
         - INTERSECT로 두 테이블을 병합함
         
-3. MUNIS / EXCEPT
+3. MINUS / EXCEPT
 - 차집합 연산을 수행함
     - 왼쪽 테이블에서 두 테이블에 공통적으로 포함된 레코드들을 제외시킨 결과 반환
     SELECT NAME, TEL CLASS FROM CLUB1
