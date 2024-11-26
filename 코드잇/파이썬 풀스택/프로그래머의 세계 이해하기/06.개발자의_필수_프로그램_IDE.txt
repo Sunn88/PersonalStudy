@@ -2,3 +2,16 @@ IDE(Integrated Development Environment) : 통합 개발 환경
 - 개발자들이 코딩할 때 도움이 되는 기능을 모아둔 프로그램
 
 Intelli J, Eclipse, Visual Studio 등
+
+IDE 이외에도 유용한 프로그램들
+- 프로젝트 관리 툴
+    - Jira
+    - Trello
+    - Asana
+    - Confluence
+- 메신저
+    - Slack
+    - Skype
+    - Jandi
+- 디자인 협업 툴
+    - Sketch

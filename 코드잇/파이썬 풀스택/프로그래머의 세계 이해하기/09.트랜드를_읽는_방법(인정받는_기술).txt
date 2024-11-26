@@ -1,0 +1,19 @@
+stackshare : 기업에서 주로 사용하는 기술정보 사이트
+- 언어
+- 프레임워크
+- 라이브러리
+- 기술
+
+기업에서 만들거나 지원하는 기술
+- facebook : React
+- Google : AngularJs, GO
+- Oracle : Java
+- Apple : Swift
+
+다양한 자료 살펴보기
+- medium
+- Rediit
+- Quora
+- Naver
+- kakao
+- woowahan
