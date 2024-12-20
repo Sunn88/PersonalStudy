@@ -2,7 +2,7 @@
 Feel free to reach out if you need anything.
 뭐든 필요하면 부담 없이 연락하세요.
 
-*feel free : 편하게 해
+* feel free : 편하게 해
 
 Feel free to interrupt me if you have something to say.
 뭔가 할 말이 있으면 부담 엇이 제 말을 멈추세요.
@@ -13,8 +13,8 @@ Feel free to interrupt me if you have something to say.
 I was just wondering. Where can I find more marketing resources?
 그냥 궁금한게 있는데요. 더 많은 마케팅 자료는 어디서 찾을 수 있나요?
 
-*currently : 시기에 따라 바뀌는 정보에 대해서 "현재"를 가리키는 부사
-*work-life balance : 워라밸
+* currently : 시기에 따라 바뀌는 정보에 대해서 "현재"를 가리키는 부사
+* work-life balance : 워라밸
 
 What project are you currently working on?
 지금 현재 무슨 프로젝트를 작업하고 계세요?
