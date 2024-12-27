@@ -1,7 +1,6 @@
 1. 혹시...
 Have you read my email by any chance?
 혹시 제 이메일 읽어 보셨어요?
-
 * by any chance : 어떤 가능성으로라도, 혹시라도
     - 네/아니오 질문에만 사용
     - 문장 앞/중간/뒤 모두 가능
@@ -10,12 +9,10 @@ Have you read my email by any chance?
 2. 기회가 날 떄
 When you get a chance, would you review these reports?
 기회가 날 때 이 보고서들 좀 검토해 줄래?
-
 * when you get a chance : 기회가 날 때, 짬이 날 때
 
 
 3. 미처 못 했어요
 I haven`t gotten aroud to it yet.
-(해내련느 의지는 있었지만)아직 그것을 미처 못 했어.
-
+(해내려는 의지는 있었지만)아직 그것을 미처 못 했어.
 * get around to : 힘들었지만, 결국 ~를 하다

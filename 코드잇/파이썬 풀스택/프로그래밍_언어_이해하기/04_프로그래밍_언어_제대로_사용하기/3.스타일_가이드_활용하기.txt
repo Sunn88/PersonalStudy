@@ -4,3 +4,5 @@
 - pascal 표기법 : math_score
 - camel 표기법 : mathScore
 
+언어마다 스타일 가이드가 존재
+- 구글 검색

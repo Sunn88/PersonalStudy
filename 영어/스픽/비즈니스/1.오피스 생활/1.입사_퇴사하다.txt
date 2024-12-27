@@ -1,10 +1,8 @@
 1. 입사하다
 I joined Speak about 2 years ago.
 나는 2년 전에 스픽에 입사했어.
-
 * enter : (건물, 장소에)들어가다
-  join : (조직, 그룹에)들어가다
-
+* join : (조직, 그룹에)들어가다
 I just joined the marketing team last month.
 나 지난달에 마케팅 부서로 이제 막 들어갔어.
 
@@ -12,11 +10,9 @@ I just joined the marketing team last month.
 2. 퇴사하다
 I left Google last year.
 나 작년에 구글에서 나왔어(퇴사했어).
-
 * leave + 조직명 : ~를 떠나다, 퇴사하다
 * quit : 관두다(부정적인 뉘앙스)
-  leave : 퇴사하다(중릭적인 표현)
-
+* leave : 퇴사하다(중릭적인 표현)
 I left Amazon about a month ago.
 나 한 달 전쯤에 아마존에서 나왔어.
 
@@ -24,12 +20,10 @@ I left Amazon about a month ago.
 3. ~한지 ~밖에 안됐어요
 I`ve been working here for only a week.
 저 여기서 근무한 지 일주일밖에 안 되었어요.
-
 * have been -ing : 현재 완료 진행
     - 기간 강조
     - 앞으로도 당분간 이어짐을 암시
 * for only + 기간 : ~밖에, 한정된 기간 표현
-
 I`ve been learning english for only a month.
 나 영어공부 한 지 한 달 밖에 안 됐어.
 
