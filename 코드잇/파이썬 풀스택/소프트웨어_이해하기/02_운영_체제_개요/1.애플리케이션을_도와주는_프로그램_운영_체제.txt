@@ -1,0 +1,2 @@
+운영체제(Operating System, OS)
+- 윈도우 10, macOS, Linux, 안드로이드, iOS 등
