@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>재능커리어</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 0 80px; /* Add padding on left and right */
+        }
+        header, footer {
+            width: 100%;
+            text-align: center;
+            padding: 20px 0;
+        }
+        header {
+            background-color: #004085;
+            color: white;
+        }
+        footer {
+            background-color: #202020;
+            color: white;
+        }
+        .block {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px 0;
+        }
+        .block-1 {
+            background-color: #0078d7;
+        }
+        .block-1 .button-container {
+            display: flex;
+            gap: 20px; /* Space between buttons */
+        }
+        .block-1 button {
+            background-color: white;
+            color: #0078d7;
+            border: 2px solid #0078d7;
+            width: 120px; /* Adjusted size */
+            height: 120px; /* Adjusted size */
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .block-1 button:hover {
+            background-color: #005bb5;
+            color: white;
+        }
+        .block-2 {
+            background-color: #f4f4f4;
+        }
+        .block-2 .filter-search {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .block-2 .filter-search input, .block-2 .filter-search select {
+            padding: 10px;
+            font-size: 16px;
+        }
+        .block-2 .filter-search button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #0078d7;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .block-2 .filter-search button:hover {
+            background-color: #005bb5;
+        }
+        .block-3 {
+            background-color: #333;
+            color: white;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+        }
+        .block-3 .card {
+            background-color: white;
+            color: black;
+            width: 200px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .block-3-1 {
+            gap: 20px;
+            flex-direction: row;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>멘토-멘티 매칭 플랫폼</h1>
+    </header>
+    <div class="block block-1">
+        <!--<h2>무엇을 원하시나요?</h2>-->
+        <div class="button-container">
+            <button>멘토로 등록</button>
+            <button>멘티로 등록</button>
+        </div>
+    </div>
+    <div class="block block-2">
+        <h2>검색 및 필터</h2>
+        <div class="filter-search">
+            <select>
+                <option value="">분야 선택</option>
+                <option value="programming">프로그래밍</option>
+                <option value="design">디자인</option>
+                <option value="business">비즈니스</option>
+            </select>
+            <input type="text" placeholder="검색어 입력">
+            <button>검색</button>
+        </div>
+    </div>
+    <div class="block block-3">
+        <h2>추천 멘토/멘티</h2>
+        <div class="block block-3-1">
+            <div class="card">
+                <h3>카드 제목</h3>
+                <p>카드 내용</p>
+            </div>
+            <div class="card">
+                <h3>카드 제목</h3>
+                <p>카드 내용</p>
+            </div>
+            <div class="card">
+                <h3>카드 제목</h3>
+                <p>카드 내용</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 매칭 플랫폼</p>
+    </footer>
+</body>
+</html>
