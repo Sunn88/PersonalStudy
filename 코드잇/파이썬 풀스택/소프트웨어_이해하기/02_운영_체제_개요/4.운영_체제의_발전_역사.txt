@@ -1,0 +1,18 @@
+Unix : 최초의 운영 체제
+- 1970년 초 개발
+- 대부분 C언어로 작성
+- 다른 컴퓨터에 수정해서 적용이 쉬움
+- POSIX : Unix라면 갖춰야 할 규격과 기능
+    - 만족시 Unix의 공식 버전으로 인증됨
+    - macOS도 포함됨
+
+GNU(GNU is Not Unix) : Unix의 코드를 한 줄도 사용하지 않고 만든 Unix와 유사한 OS
+- POSIX는 만족하지만 공식 인증은 아님
+- GNU/Linux : GNU + Linux Kernel
+    - Kernel : 운영체제의 핵심 부분
+- Linux
+    - 최다 인원 프로젝트
+    - 누구나 사용/변형 가능
+    - 반드시 코드를 공개해야 하는 의무
+    - 수많은 변형 운영체제 등장
+    - Andoid, ubuntu, Chrome OS 등등
