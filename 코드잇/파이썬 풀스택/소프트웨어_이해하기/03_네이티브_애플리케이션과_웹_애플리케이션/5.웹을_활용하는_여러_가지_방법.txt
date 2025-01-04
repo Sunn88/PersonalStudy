@@ -1,0 +1,12 @@
+Single-page Application : 페이지 이동 없이 하나의 페이지에서 내용만 바뀜
+- ex) facebook, twitter, google map
+
+Hybrid Web Application : 일반적인 네이티브 애플리케이션의 일부를 웹으로 바꿈
+- 정해진 특정 공간만 바꿀 수 있음
+
+Progressive Web Application(PWA) : Web과 Native의 장점만 결합
+- 설치 없이 실행 가능
+- 주소만 입력하면 접근 가능
+- 실시간 업데이트
+- 인터넷 없이 실행 가능
+- OS 기능 사용 가능
