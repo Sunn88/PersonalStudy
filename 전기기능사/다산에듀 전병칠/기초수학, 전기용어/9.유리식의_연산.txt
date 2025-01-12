@@ -1,0 +1,4 @@
+유리식의 사칙연산
+a/b + c/d = (ab + bc)/bd
+a/b * c/d = ac/bd
+a/b / c/d = ad/bc

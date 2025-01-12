@@ -1,0 +1,8 @@
+비례식과 비례중항
+a : b = c : d <=> a/b = c/d <=> ad = bc
+a : x = x : b <=> x^2 = ab
+
+비례식의 성질
+a : b = c : d = e : f, 즉 a/b = c/d = e/f일 때
+(a + b)/c = (c + d)/d, (a - b)/b = (c - d)/d
+(a + b)/(a - b) = (c + d)/(c - d), (a - b)/(a + b) = (c - d)/(c + d)
