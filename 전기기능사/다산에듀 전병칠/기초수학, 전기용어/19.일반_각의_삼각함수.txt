@@ -1,0 +1,8 @@
+sin = y/r
+cos = x/r
+tan = y/x
+cosec = r/y
+sec = r/x
+cot = x/y
+
+sin^2 + con^2 = 1
