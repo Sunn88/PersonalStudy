@@ -1,0 +1,17 @@
+1) BCD(Binary Coded Decimal, 2진화 10진 코드)
+- 6Bit 코드로 IBM사에서 개발
+- 1개의 문자를 2개의 Zone 비트와 4개의 Digit 비트로 표현함
+- 2^6 = 64가지 문자 표현 가능
+- 영문 소문자는 표현 못함
+
+2) ASCII코드(American Standard Code for Information Interchange)
+- 7Bit 코드로 미국 표준협회에서 개발
+- 1개의 문자를 3개의 Zone 비트와 4개의 Digit 비트로 표현함
+- 2^7 = 128가지 문자 표현 가능
+- 통신 제어용 및 마이크로컴퓨터의 기본 코드로 사용함
+
+3) EBCDIC(Extended BCD Interchange Code, 확장 2진화 10진 코드)
+- 8Bit 코드로 IBM사에서 개발
+- 1개의 문자를 4개의 Zone 비트와 4개의 Digit 비트로 표현함
+- 2^8 = 256가지 문자 표현 가능
+- 대형 기종의 컴퓨터에서 사용
