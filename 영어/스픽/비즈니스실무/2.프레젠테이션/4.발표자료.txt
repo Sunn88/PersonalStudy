@@ -1,0 +1,16 @@
+1. 시작하고자 합니다
+I`d like to start off with a quick overview of our sales.
+우리 판매에 대한 짧은 개요로 시작하고자 합니다.
+* start off with : ~로 과정을 시작하다
+* 숫자가 아닌 숫자를 표현하는 경우 복수형 numbers 사용
+
+
+2. ~에서 보시다시피
+As you can see from this graph, there`s a slight drop in user signups.
+이 그래프에서 보실 수 있다시피, 사용자 가입에 있어서 약간의 감소가 있습니다.
+* slight : 살짝, 아주 약간
+There`s a slight bump in numbers.
+수치에서 약간의 상승이 있습니다.
+* bump : 충돌, 혹
+* spike : 뾰족한 것, 급등
+* a sharp increase : 가파른 증가
