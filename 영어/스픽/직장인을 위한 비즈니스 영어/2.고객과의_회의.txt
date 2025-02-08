@@ -1,0 +1,22 @@
+1. It`s a pleasure to meet you.
+만나 뵙게 되어 반갑습니다.
+
+
+2. I`m the head of marketing at Spoken Solutions,
+저는 Spoken Solutions의 마케팅 책임자입니다.
+I`m a junior developer at Apple.
+저는 Apple의 신입 분석가입니다.
+* 하나만 있는 직책은 the, 여러 명이 있는 직책은 a를 붙임
+
+
+3. What are the deliverables for this project?
+이 프로젝트의 산출물은 어떻게 되나요?
+* deliverable : 고객이 전달받고 싶어하는 결과물
+What is the budget for this project?
+이 프로젝트의 예산은 어떻게 되나요?
+
+4. Please don`t hesitate to reach out.
+주저하지 마시고 연락해 주세요.
+* hesistate : 기다리거나 주저함 -> 정중한 표현
+* to reach out : 연락하다 -> 캐주얼한 표현
+* 정중하면서도 친근한 표현
