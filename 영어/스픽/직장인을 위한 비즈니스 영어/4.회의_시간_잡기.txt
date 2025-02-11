@@ -1,0 +1,17 @@
+If를 이용해 상대방이 시간이 되는지 물어볼 수 있음
+
+If you`re available at fout...
+4시에 시간이 되시면
+
+If you`re not too busy right now...
+지금 너무 바쁘지 않으시면
+
+I`d like to hava a quick sync.
+잠시 온라인으로 얘기 나눴으면 합니다.
+
+I`d like to talk about the budget.
+예산에 대해 얘기 나눴으면 합니다.
+
+If you`re available at noon, I`d like to hava a quick sync.
+정오에 시간이 되시면, 잠시 온라인으로 얘기 나눴으면 합니다.
+
