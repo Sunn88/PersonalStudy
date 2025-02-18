@@ -1,0 +1,10 @@
+1) 최신 Windows의 특징
+- 그래픽 사용자 인터페이스(GUI) 사용
+- 선점형 멀티태스킹(Preemptive Multi-Tasking)
+- 32비트 또는 64비트 데이터 처리
+- FAT32 파일 시스템
+- 플러그 앤 플레이(PnP)
+- OLE(Object Linking and Embedding)
+- 255자의 긴 파일 이름
+- 향상된 네트워크 기능
+- DOS와 호환

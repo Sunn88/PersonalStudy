@@ -2,7 +2,7 @@
 
 import os
 dir = os.getcwd()
-with open(f'{dir}/../파일 읽고 쓰기/chicken.txt', 'r') as f:
+with open('chicken.txt', 'r', encoding="utf-8") as f:
     print(type(f))
     for line in f:
         print(line)
