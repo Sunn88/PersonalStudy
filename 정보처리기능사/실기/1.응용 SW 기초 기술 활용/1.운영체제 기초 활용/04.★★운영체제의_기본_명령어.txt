@@ -1,0 +1,103 @@
+* Windows와 UNIX/LINUX에서 사용하는 명령어를 구분할 수 있어야 하고, 각 명령어들의 개별적인 기능을 알고 잇어야 함
+
+1) 운영체제 기본 명령어의 개요
+- 운영체제를 제어하는 방법
+    - CLI(Command Line Interface) : 키보드로 명령어를 직접 입력해 작업을 수행하는 사용자 인터페이스
+    - GUI(Graphic User Interface) : 마우스로 아이콘이나 메뉴를 선택해 작업을 수행하는 그래픽 사용자 인터페이스
+
+2) Windows 기본 명령어
+- CLI 기본 명령어 : 명령 프롬프트 창에 명령어를 입력해 작업을 수행하는 것
+    - dir : 현재 디렉터리의 파일 목록 표시
+        - /p : 목록을 한 화면 단위로 표시
+        - /w : 목록을 가로로 내열해 표시
+        - /o : 지정한 정렬 방식으로 파일 목록 표시
+            - d : 날짜/시간
+            - e : 확장자
+            - n : 파일 이름
+            - s : 파일 크기
+        - /s : 하위 디렉터리의 정보가지 표시
+        - /a : 지정한 속성이 설정된 파일 목록 표시
+    - copy : 파일 복사
+        - ex) copy abc.txt gilburt : abc.txt 파일을 gilburt 디렉터리로 복사함
+    - del : 파일 삭제
+        - ex) del abc.txt : abc.txt 파일 삭제
+    - type : 파일 내용 표시
+        - ex) type abc.txt : abc.txt 파일 내용 표시
+    - ren : 파일 이름 변경
+        - ex) ren abc.txt 123.txt : abc.txt 파일의 이름을 123.txt로 변경
+    - md : 디렉터리 생성
+        - ex) md gilburt : gilburt 디렉터리 생성
+    - cd : 동일한 드라이브에서 디렉터리 위치 변경
+        - ex) cd gilburt : 디렉터리의 위치를 gilburt로 변경
+    - cls : 화면에 표시된 모든 내용 지움
+    - attrib : 파일 속성 변경
+        - r : 읽기 전용 속성
+        - a : 저장/백업 속성
+        - s : 시스템 파일 속성 
+        - h : 숨김 파일
+        - 속성 지정시 속성 앞에 +를, 해제시 앞에 -를 입력함
+        - ex) attrib +r abc.txt : abc.txt 의 파일 속성을 읽기 전용으로 변경함
+    - find : 파일에서 문자열을 찾음
+        - ex) find "123" abc.txt : abc.txt에서 "123"이 포함된 문자열을 찾음
+    - chkdsk : 디스크 상태 점검
+        - ex) chkdsk : 현재 드라이브의 상태 점검
+    - format : 디스크 표면을 트랙과 섹터로 나누어 초기화함
+        - ex) format c: : c드라이브를 초기화함
+    - move : 파일 이동
+        - ex) move abc.txt gilburt : abc.txt파일을 gilburt 디렉터리로 이동함
+    - ping : 특정 호스트가 현재 네트워크에 연결되어 정상적으로 작동하고 있는지 알아보는 서비스
+        - ICMP를 사용해 특정 호스트로의 연결 가능 여부 확인
+    - ipconfig : IP 주소, 서브넷 마스크, 게이트웨이, MAC 주소 등 네트워크 인터페이스의 현재 상태 표시
+- GUI 기본 명령어 : 바탕 화면이나 Windows 탐색기에서 마우스로 아이콘을 더블클릭해 프로그램 실행, 파일의 복사 및 이동, 제어판의 기능 실행 등 모든 작업이 해당함
+
+3) UNIX/LINUX 기본 명령어
+- CLI 기본 명령어 : 쉘에 명령어를 입력해 작업을 수행하는 것
+    - cat : 파일 내용을 화면에 표시함
+        - ex)  cat abc.txt : abc.txt 파일 내용을 화면에 표시함
+    - cd : 디렉터리 위치 변경
+        - ex) cd gilburt : gilburt 디렉터리로 이동함
+    - chmod : 파일의 보호모드를 설정해 파일의 사용 허가 지정
+        - ex) chmod u=rwx abc.txt : user에게 abc.txt 파일의 읽기, 쓰기, 실행 권한 부여
+    - chown : 파일 소유주와 그룹 변경
+        - ex) chown member1 abc.txt : abc.txt 파일의 소유자를 member1로 변경함
+    - cp : 파일 복사
+        - ex) cp abc.txt gilburt/abc2.txt : abc.txt 파일을 gilburt 디렉터리에 abc2.txt로 이름을 변경해 복사
+    - rm : 파일 삭제
+        - ex) rm abc.txt : abc.txt 파일 삭제
+    - find : 파일 찾기
+        - ex) find abc.txt : abc.txt 파일 찾기
+    - fsck : 파일 시스템 검사, 보수
+        - ex) fsck /dev/sda1 : /dev/sda1에 기록된 모든 파일 시스템을 검사하고 보수함
+    - kill : PID(프로세스 고유 번호)를 이용해 프로세스 종료
+        - ex) kill 1234 : PID가 1234인 프로세스 종료
+    - killall : 프로세스의 이름을 이용해 프로세스 종료
+        - ex) killall gilburt : 프로세스 이름이 gilburt인 모든 프로세스 종료
+    - ls : 현재 디렉터리의 파일 목록 표시
+    - mkdir : 디렉터리 생성
+        - ex) mkdir gilburt : gilburt 디렉터리 생성
+    - rmdir : 디렉터리 삭제
+        - ex) rmdir gilburt : gilburt 디렉터리 삭제
+    - mv : 파일 이동
+        - ex) mv abc.txt gilburt/abc2.txt : abc.txt 파일을 gilburt 디렉터리에 abc2.txt로 이름을 변경해 이동
+    - ps : 현재 실행중인 프로세스 표시
+    - pwd : 현재 작업중인 디렉터리 경로를 화면에 표시함
+    - top : 시스템의 프로세스와 메모리 사용 현황 표시
+    - who : 현재 시스템에 접속해 있는 사용자 표시
+    - tar : 파일을 압축하거나 압축을 해제함
+        - 옵션
+            - f : 압축이나 해제 시 기본적으로 사용해야 하는 옵션
+            - c : 압축할 때 사용
+            - x : 압축을 해제할 때 사용
+            - v : 처리되는 과정(파일 정보)을 자세하게 나열
+        - ex) tar cvf abc.tar * : 현재 디렉터리의 모든 파일을 'abc.tar'라는 이름으로 압축하며, 처리 과정을 자세히 표시함
+        - ex) tar xvf abc.tar : 압축된 'abc.tar' 파일을 현재 디렉터리에 해제하며, 처리 과정을 자세히 표시함
+    - head : 파일 내용의 앞부분을 출력함
+        - 옵션을 지정하지 않을 경우 기본값은 10행
+        - 옵션
+            - -n : 출력할 행의 수를 지정
+            - -c : 출력할 바이트를 지정
+    - ifconfig : IP 주소, 서브넷 마스크, 브로드캐스트 주소, MAC 주소 등 네트워크 인터페이스의 현재 상태 표시
+- GUI 기본 명령어
+    - UNIX와 LINUX는 기본적으로 CLI를 기반으로 운영되는 시스템
+    - X Windows라는 별도의 프로그램을 설치해 GUI 방식으로 운영할 수 있음
+    
