@@ -11,3 +11,21 @@ But on the other hand, sales have been plummeting.
 하지만 다른 한편으로는 매출이 급감했습니다.
 * numbers : 매출 또는 수익과 관련된 숫자, 수치를 의미
 * short-staffed : 인려깅 부족하다; 주어진 업무량을 완수하기에 인력이 충분하지 않다
+
+Despite out best efforts...
+우리의 최선의 노력에도 불구하고...
+* despite : ~에도 불구하고
+
+Employee satisfaction has been better than expected.
+직원 만족도가 예상보다 좋았습니다.
+* has been을 사용해 과거에 초점을 맞추고 있지만 앞으로도 계속 변화할 수 있는 여지를 남겨둠
+
+The feedback was negative.
+피드백이 부정적이었습니다.
+* 과거형 was/were을 사용함으로써 결과가 이미 발생했으며 변경될 수 없음을 의미함
+The results were less than stellar.
+결과가 그다지 뛰어나지 않았습니다.(변경될 여지 없음)
+* less than stellar : 그다지 뛰어나지 않은, 불만족스러운
+
+Despite out best efforts, the results were less than stellar.
+우리의 최선의 노력에도 불구하고 결과가 그다지 뛰어나지 않았습니다.
