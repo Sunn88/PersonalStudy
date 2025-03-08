@@ -1,0 +1,21 @@
+I can`t get the WiFi to connect.
+WiFi가 연결되지 않아요.
+I can`t get the mic to work.
+마이크가 작동하지 않아요.
+
+Why don`t we call IT support?
+IT 지원팀에 전화해 보는 건 어떨까요?
+Why don`t we take a short break?
+잠시 쉬는 건 어떨까요?
+* postpone : 연기하다; 이후 시간이나 날짜로 연기하거나 뒤로 미루다
+
+We`re experiencing some technical difficulties.
+저희가 기술적인 문제를 좀 겪고 있습니다.
+* technical difficulties : 기술적 어려움, 문제
+Please bear with us while we sort this out.
+이 문제를 해결하는 동안 기다려 주시기 바랍니다.
+* bear with us : 인내와 이해를 구하는 데 사용되는 표현
+Please bear with us for a brief moment.
+잠시만 기다려 주시기 바랍니다.
+Thank you for your patience.
+양해해 주셔서 감사합니다.
