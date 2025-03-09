@@ -3,6 +3,15 @@ This meeting could have been an email.
 
 1. Can you share the link?
 링크를 공유해 주시겠어요?
+Can you share your screen?
+화면을 공유해 주시겠어요?
+* share your screen : 화면을 공유하다; 이를 통해 화상 회의에서 모든 사람이 동시에 동일한 정보를 볼 수 있음
+Can you share some more details?
+좀 더 자세한 내용을 공유해 주시겠어요?
+share some more details : 해당 주제에 대해 더 자세한 정보 요청하기
+Can you share the agenda?
+안건을 공유해 주시겠어요?
+the agenda : 안전; 의제; 업무 또는 목표를 나열한 목록
 
 
 2. What`s on the agenda for this meeting?
@@ -13,13 +22,20 @@ What`s on your plate for this week?
 * on your plate : 어떤 업무(비유적 표현)
 
 
-3. i have some updates.
+3. I have some updates.
 전할 소식이 좀 있어요.
 * some은 부드럽게 표현할 떄 사용
 I have some progress updates.
 진행 상황 관련 소식이 좀 있어요.
 I have some life updates.
 개인적인 소식이 좀 있어요.
+I have some major updates.
+중대한 소식이 좀 있어요.
+* major : 중대한; 매우 중요한; 가장 중요한
+I have some minor updates.
+소소한 소식이 좀 있어요.
+minor : 소소한; 작은 세부 사항과 관련된; 중요도가 낮은
+
 
 * at risk : 실패하거나 실패할 위기에 처하다
 * priority : 우선순위; 중요한 정도
@@ -27,4 +43,3 @@ I have some life updates.
 * blocked : 중단되다; 어떤 이유로 프로젝트의 진행이 막히다
 * out of office(OOO) : 부재중, 자리를 비움, 휴가 중인 상태
 * I`ll be OOO this Friday. : 서면에서
-* 
