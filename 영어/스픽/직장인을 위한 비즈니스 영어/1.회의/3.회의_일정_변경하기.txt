@@ -1,21 +1,31 @@
 1. I`m running late.
 일정이 늦어졌어요.
+* running late : 늦다; 일정에 늦다
+The meeting is running over.
+회의가 길어지고 있어요
+* running over : 길어지다; 어떤 일이 예상보다 오래 지속되다
+I have to jump off five minutes early.
+5분 일찍 가봐야 해요.
+* jump off : 나가다; 떠나다
 
 
 2. Can we push our meeting to tomorrow?
 회의를 내일로 미룰 수 있을까요?
 Can we push out meeting to a bit later?
 회의를 조금 미룰 수 있을까요?
+* to push a meeting : 미루다; 회의를 나중으로 미루거나 일정을 변경하다
 
 
 3. Can we squeeze in a meeting later today?
 오늘 이따가 잠깐 회의할 시간을 낼 수 있을까요?
 Can we squeeze in a meeting right now?
 지금 잠깐 회의할 시간을 낼 수 있을까요?
+* to squeeze in a meeting : 갑작스런 회의의 일정을 끼워 넣다
 
 
 4. Can we take a rain check?
 일정을 다음으로 연기해도 될까요?
+* take a rain check : 나중에 일정을 다시 잡겠다는 의미
 
 
 It`t looks like Jake`s meeting is running over.
@@ -51,3 +61,17 @@ I can do Friday at two.
 I`m flexible.
 원하시는 시간에 맞춰드릴 수 있습니다.
 * flexible : 유연하다; 시간/일정을 조정할 수 있다
+
+Let me check my calendar.
+제 일정을 확인해 볼게요.
+* check my calendar : 시간을 낼 수 있는지 여부와 선약을 확인하다
+Let me check with my boss.
+제 상사와 확인해 볼게요.
+* check "with" someone : 다른 사람에게 어떤 유형의 정보나 확인을 요청하다
+Let me check on that.
+그 부분은 확인해 볼게요.
+* check "on" something : 특정 주제에 대한 정보를 찾다
+Let me get back to you later.
+나중에 다시 연락드릴게요.
+* get back to you : 상대방에게 다시 연락하겠다고 말할 때 쓰는 표현
+

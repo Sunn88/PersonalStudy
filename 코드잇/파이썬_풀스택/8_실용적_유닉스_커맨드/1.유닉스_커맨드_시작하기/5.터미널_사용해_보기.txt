@@ -1,0 +1,11 @@
+터미널 : 커맨드를 입력하는 창
+
+프롬프트가 보여야 커맨드 입력 받을 준비가 된 것
+
+날짜 관련 패키지 설치 필요
+1. sudo apt update 입력 후 완료될 때까지 대기
+2. sudo apt install bsdmainutils 입력
+3. Do you want continue? [Y/n] 에서 y 입력
+
+date : 현재 시간과 날짜 출력
+cal : 이번 달 달력이 출력됨

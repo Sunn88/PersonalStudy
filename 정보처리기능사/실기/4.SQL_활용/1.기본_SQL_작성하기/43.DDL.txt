@@ -1,0 +1,40 @@
+* 각 명령어의 역할 숙지하고 구문을 보면 무엇을 의미하는지 이해할 수 있을 정도만
+
+2) CREATE SCHEMA
+- 스키마를 정의하는 명령문
+- 표기 형식
+    CREATE SCHEMA 스키마명 AUTHORIZATION 사용자_id;
+
+3) CREATE DOMAIN
+- 도메인을 정의하는 명령문
+- 표기 형식
+    CREATE DOMAIN 도메인명 [AS] 데이터_타입
+            [DEFAULT 기본값]
+            [CONSTRAINT 제약조건명 CHECK (범위값)];
+    - 데이터 타입 : SQL에서 지원하는 데이터 타입
+    - 기본값 : 데이터를 입력하지 않았을 때 자동으로 입력되는 값
+
+4) CREATE TABLE
+- 테이블을 정의하는 명령문
+- 표기 형식
+    CREATE TABLE 테이블명
+           (속성명 데이터_타입 [DEFAULT 기본값][NOT NULL], ...
+            [, PRIMARY KEY(기본키_속성명, ...)]
+            [, UNIQUE(대체키_속성명, ...)]
+            [, FOREIGN KEY(외래키_속성명, ...)
+                    REFERENCES 참조테이블(기본키_속성명, ...)]
+            [, CONSTRAINT 제약조건명][CHECK (조건식)]);
+    - 기본 테이블에 포함될 모든 속성에 대해 속성명과 그 속성의 데이터 타입, 기본값, NOT NULL 여부 지정
+    - 외래키가 지정되면 참조 무결성의 CASCADE 법칙이 적용됨
+    - CONSTRAINT : 제약 조건의 이름을 지정함
+        - 이름을 지정할 필요가 없으면 CHECK 절만 사용해 속성 값에 대한 제약 조건을 명시함
+    - CHECK : 속성 값에 대한 제약 조건을 정의함
+
+5) CREATE VIEW
+- 뷰를 정의하는 명령문
+- 표기 형식
+    CREATE VIEW 뷰명[(속성명[, 속성명, ...])]
+    AS SELECT문
+    - SELECT문을 서브 쿼리로 사용해 SELECT문의 결과로서 뷰를 생성삼
+    - 서브 쿼리인 SELECT문에는 UNION이나 ORDER BY절을 사용할 수 없음
+    
