@@ -56,9 +56,9 @@
 
 4) Java의 주요 메소드
 - String
-    - A.compareTo(B) : 수샂로 된 문자열 A와 B를 비교해 같으면 0, A가 크면 1, B가 크면 -1 반환
+    - A.compareTo(B) : 숫자로 된 문자열 A와 B를 비교해 같으면 0, A가 크면 1, B가 크면 -1 반환
     - A.equals(B) : 대소문자를 구분해 문자열 A와 B를 비교한 후 같으면 참, 다르면 거짓 반환
-    - A.equalsIgnoreCase(B) : 대소문자 구분없이 문자열 A와 V를 비교한 후 같으면 참 다르면 거짓 반환
+    - A.equalsIgnoreCase(B) : 대소문자 구분없이 문자열 A와 B를 비교한 후 같으면 참 다르면 거짓 반환
     - toLowerCase(문자열) : 문자열을 모두 소문자로 변환함
     - toUpperCase(문자열) : 문자열을 모두 대문자로 변환함
     - split(구분자) : 지정된 구분자로 문자열을 구분해 분리함
