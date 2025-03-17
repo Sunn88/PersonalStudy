@@ -34,6 +34,10 @@ To avoid any unexpected difficulties, let`s monitor our expenses.
 Can you have the contract signed by tomorrow?
 내일까지 계약서 서명을 완료하실 수 있나요?
 
+Can you have the doc prepared by the end of the day?
+오늘까지 문서를 준비하실 수 있나요?
+by the end of the day(EOD) : 업무 마감 시점(오후 5~7시) 또는 하루가 끝나는 자정 이전까지를 의미함
+
 
 3. I`ll have the report finished by the end of the week.
 이번 주 말까지 보고서를 완료하도록 하겠습니다.
@@ -41,7 +45,6 @@ Can you have the contract signed by tomorrow?
 
 I`ll have the doc prepared by the end of the day.
 오늘까지 문서를 준비하도록 하겠습니다.
-* by the end of the day(EOD) : 업무 시간 마감까지
 
 I`ll have my team get back to you.
 저희 팀에게 회신해 드리라고 하겠습니다.
@@ -64,3 +67,11 @@ Michael이 11시까지 계약서 서명을 완료할 것입니다.
 
 He`ll have the doc prepared by sometime tomorrow.
 그가 내일 중으로 문서를 준비할 것입니다.
+
+I`ll have the email sent by sometime tonight.
+오늘 밤 중으로 이메일을 발송하도록 하겠습니다.
+sometime : 언젠가; 모호한 기한을 제시하며, 구체적인 시간을 명시하지 않음
+
+I`ll get to it sometime tomorrow.
+내일 중으로 시작하겠습니다.
+* I`ll get to it : 착수하겠습니다; 일을 시작하겠습니다.
