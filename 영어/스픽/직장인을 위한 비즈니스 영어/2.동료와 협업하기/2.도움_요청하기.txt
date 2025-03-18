@@ -3,25 +3,46 @@ I have a lot on my plate.
 
 Do you have any bandwidth?
 여력이 있으신가요?
-* bandwidth : 어던 일을 할 여력, 여유
+* bandwidth : 어떤 일을 할 여력, 여유
 
 Do you have any bandwidth to help me out?
 저를 도와주실 여력이 있으신가요?
 
 Do you have any bandwidth to take on a new project?
 새로운 프로젝트를 맡으실 여력이 있으신가요?
+* take on : 맡아서 하다; 일이나 책임을 수락하다
+
+Do you have bandwidth to help me out with this upcoming project?
+곧 다가올 프로젝트에서 저를 도와주실 여력이 있으신가요?
+* upcoming : 예정된, 곧 시작될; 향후 시작될
 
 I`d be happy to.
 물론이죠.
 
 I`d be happy to take something off your plate.
 기꺼이 업무를 좀 덜어드리겠습니다.
+* take something off your plate : 다른 사람의 업무 부담을 덜어주다
+
+I`d be happy to be an extra pait of eyes.
+기꺼이 재검토를 도와드리겠습니다.
+* be an extra pair of eyes : 누군가를 위해 추가적으로 일을 검토하거나, 피드백을 제공하거나, 편집해 주다
+
+I`d be happy to provide some moral support.
+기꺼이 정신적으로 힘이 되어드리겠습니다.
+* moral support : 정신적으로 마음으로 해주는 격려
 
 Sorry, I have too much on my plate.
 죄송합니다, 제 업무량이 너무 많아요.
+* too much on my plate : 감당할 업무량이 너무 많다
 
 Sorry, I have other priorities.
 죄송합니다, 다른 우선순위가 있어요.
+* priorities : 우선순위; 중요도로 봤을 때 우선순위가 높은 업무들
+
+Sorry, I have too many prior commitments.
+죄송합니다. 이미 하기로 한 일이 너무 많아요.
+* prior commitments : 선약; 이전에 합의한 일이나 책임
+* upcoming : 곧 다가올; 임박한
 
 * delegate : 위임하다; 모든 사람에게 명확하고 균등하게 배정하다
 * an extension : 기한 연장; 마감일 미루기; 추가 시간
