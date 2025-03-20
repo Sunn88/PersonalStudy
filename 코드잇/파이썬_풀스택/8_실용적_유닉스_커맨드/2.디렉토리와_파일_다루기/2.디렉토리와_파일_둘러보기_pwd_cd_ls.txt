@@ -5,3 +5,6 @@ pwd : Print Working Directory
 cd : Change Directory
 - 다른 디렉토리로 이동 : cd 경로
 - 경로 없이 cd만 입력할 경우 home directory로 이동
+
+ls : List
+- 디렉토리의 내용물을 출력
