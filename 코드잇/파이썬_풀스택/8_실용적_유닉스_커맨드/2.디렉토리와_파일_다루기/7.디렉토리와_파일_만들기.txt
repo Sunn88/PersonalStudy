@@ -1,0 +1,9 @@
+mkdir : 디렉토리 만들기
+ - 절대경로 사용 : mkdir ~/unix_practice
+ - 상대경로 사용 : mkdir unix_practice
+
+
+
+touch : 파일 만들기
+- touch finances.txt
+- touch Aug/finances.txt Aug/performance.txt
