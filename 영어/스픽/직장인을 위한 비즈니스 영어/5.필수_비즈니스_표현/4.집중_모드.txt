@@ -1,16 +1,32 @@
 I`ll be heads down today.
 오늘 집중모드에 들어갈 거예요.
-* heads down : 집중모드에 들어가다
+* heads down : 집중모드에 들어가다; 외부의 방해 요소 없이 작업에 직중하다; 연락해도 회신이 늦을 것이라는 것 내포
+I`ll be heads down for a couple of hours.
+저는 두 시간 동안 집중모드에 들어갈 거예요.
+* a couple of hours : 약 2시간
 
 If you need me, just shoot me an email.
 제가 필요하시면 그냥 이메일을 보내주세요.
+* shoot me an email : 이메일을 보내다
 If you need me, just ping me.
 제가 필요하시면 그냥 메시지 주세요.
+* ping : 누군가에게 간결하고 캐주얼한 메시지를 보내다
+If you need me, just holler.
+제가 필요하시면 그냥 불러주세요.
+* holler : 외치다; 큰 목소리로 부르다
 
 I`ll touch base later today.
 오늘 이따가 연락드릴게요.
+* touch base : 접혿하다; 연락하다
 I`ll circle back later today.
 오늘 이따가 다시 얘기해요.
+* circle back : 논의, 요점 또는 작업으로 돌아오다
+I`ll loop you in later today.
+오늘 이따가 업데이트해 드릴게요.
+* loop you in : 어떤 일에 대한 세부 사항에 누군가를 포함시키고 업데이트하다
+I`ll sync up with you later today.
+오늘 이따가 온라인으로 얘기 나눠요.
+* sync up with someone : 새로운 소식을 나누기 위해 온라인으로 누군가와 만나는 것
 
 * FOMO(fear of missing out) : 뭔가를 놓칠 것만 같은 두려움
 Keep me in the loop.
