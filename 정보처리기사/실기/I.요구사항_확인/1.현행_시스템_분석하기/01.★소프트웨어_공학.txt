@@ -1,6 +1,6 @@
 출제빈도 중
 
-1) HIPO(Hierarchy plus Inout Process Output)
+1) HIPO(Hierarchy plus Input Process Output)
 - 기본 모델로 입력, 처리, 출력으로 구성되는 시스템 분석 및 설계와 시스템 문서화용 기법
 - 일반적 구성 : 가시적 도표(Visual Table of Contents), 총체적 다이어그램(Overview Diagram), 세부적 다이어그램(Detail Diagram)
     - 구조도(가시적 도표), 개요, 도표(Index Diagram), 상세 도표(Detail Diagram)
@@ -36,7 +36,7 @@
     - 데이터와 기능들의 개조 및 개선을 통해 유지보수의 용이성을 향상시키고자 함
     - 현재의 시스템을 변경하거나 재구조화(Restructuring)하는 것
     - 재구조화는 재공학의 한 유형 -> 사용자의 요구사항이나 기술적 설계의 변경 없이 프로그램을 개선하는 것
-    - 사용자의 요구사항을 변경시키지 않고, 기술적 설계를 변경하여 프로그램을 개선하는 것도 해당됨
+    - 사용자의 요구사항을 변경시키지 않고, 기술적 설계를 변경해 프로그램을 개선하는 것도 해당됨
     - 재공학의 과정 : 분석(Analysis) -> 구성(Restructuring) -> 역공학(Reverse Engineering) -> 이식(Migration)
 - 재공학의 목표
     - 최우선 목표 : 소프트웨어의 유지보수성 향상
