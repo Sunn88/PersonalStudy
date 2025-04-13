@@ -16,3 +16,10 @@ Just checking in to see if there`s been any new updates.
 Just checking in to see how everything`s going.
 그냥 모든 것이 어떻게 진행되고 있는지 확인하려고요.
 * everything : 구체적인 것이 아닌 일반적인 내용을 의미
+
+I look forward to hearing back from you.
+회신을 기다리겠습니다.
+* hear back
+I look forward to meeting you in person.
+직접 만나 뵙기를 기대합니다.
+* in-person : 화상이나 전화가 아닌 회의에서 실제로 대면하는 것
