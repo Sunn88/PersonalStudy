@@ -1,6 +1,6 @@
 My marketing experience makes me a great fit for this role.
 저의 마케팅 경험으로 인해 제가 이 직무에 매우 적합하다고 생각합니다.
-* a great fir : (옷이나 퍼즐 조각처럼)매우 적합하다, 잘 맞다
+* a great fit : (옷이나 퍼즐 조각처럼)매우 적합하다, 잘 맞다
 My tech experience makes me a valuable asset to your team.
 저의 기술 경험으로 인해 제가 팀에 가치 있는 자산이 될 거라고 생각합니다.
 * a valuavle asset : 가치 있는 자산; 중요하고 긍정적인 영향을 미치는 사람
@@ -11,3 +11,20 @@ I have lots of experience under my belt.
 I have a lifetime of experience under my belt.
 저는 오랜 시간 동안 쌓아온 경력을 보유하고 있습니다.
 * a lifetime : 평생; 오랜 시간; 삶의 대부분
+
+How does the company promote work-life balance?
+회사는 워라벨을 어떻게 장려하나요?
+How does the company promote continued learning?
+회사는 지속적인 학습을 어떻게 장려하나요?
+* continued learning : 지속적인 학습; 새로운 기술이나 지식을 습득하는 지속적인 과정
+How does the company promote an inclusive company culture?
+회사는 포용성 있는 기업 문화를 어떻게 장려하나요?
+* an inclusive company culture : 인종, 성별, 성향 등의 차이에 관계없이 개인을 있는 그대로 받아들여주는 포용성 있는 환경
+
+What is the company`s policy on parental leave?
+육아 휴직에 대한 회사 정책은 무엇인가요?
+* parental leave : 자녀의 출산, 입양 또는 육아를 위해 부여되는 휴가
+
+When can I expect to hear back about next steps?
+다음 단계에 대한 답변은 언제 받을 수 있을까요?
+* next steps : 채용 과정에서 다음 단계로 수행해야 하는 것

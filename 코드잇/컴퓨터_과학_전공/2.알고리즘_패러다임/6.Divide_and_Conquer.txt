@@ -1,1 +1,6 @@
 Divide and Conquer : 분할 정복
+- 어떤 문제가 바로 답을 찾기 힘들 때, 부분 문제로 나눠 해결한 후 기존 문제 해결
+
+1) Divide 단계
+2) Conquer 단계
+3) Combine 단계
