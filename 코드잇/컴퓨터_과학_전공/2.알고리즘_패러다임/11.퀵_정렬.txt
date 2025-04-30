@@ -8,3 +8,4 @@ Divide and Concuer를 사용하는 또 다른 정렬법
 - conquer : pivot 좌우의 리스트들을 각각 정렬
     - basecase까지
 - combine : conquer를 거치면 자동 완료됨
+
