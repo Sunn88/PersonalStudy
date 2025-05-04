@@ -1,0 +1,5 @@
+최적 부분 구조 Optimal Substructure
+중복되는 부분 구조 Overlapping Subproblems
+
+최적 부분 구조
+- 

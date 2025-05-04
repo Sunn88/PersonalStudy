@@ -27,3 +27,4 @@ the best : 최고의, 가장 좋은
 the tallest : 가장 키가 큰, 높은
 the biggest : 가장 큰
 You are the best. 네가 최고야.
+I`m the shortest person in my family. 나는 우리 가족 중에서 가장 키가 작은 사람이야.
