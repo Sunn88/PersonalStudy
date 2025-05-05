@@ -2,4 +2,5 @@
 중복되는 부분 구조 Overlapping Subproblems
 
 최적 부분 구조
-- 
+
+중복되는 부분 문제(Overlapping Subproblems)
