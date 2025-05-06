@@ -23,3 +23,13 @@ I like dogs.
 I love ice cream.
 난 아이스크림을 정말 좋아해.
 * 관사 없이 단수형 표현
+
+4) 본질적인 개념
+There is apple in apple juice.
+사과 주스에는 사과가 있어. = 사과 성분이 들어있어.
+
+5) 일반적인 사실 및 의견
+Speak lessons are fun.
+스픽 수업들은 재밌어.
+I like books.
+나는 책을 좋아해.
