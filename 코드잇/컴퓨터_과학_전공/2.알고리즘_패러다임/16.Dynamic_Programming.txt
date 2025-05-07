@@ -10,5 +10,5 @@
 = 중복되는 부분 문제들이 있을 수 있다(비효율 발생)
 
 Dynamic Programming : 한 번 계산한 결과를 재활용하는 방식 -> 비효율 해결
-- Memoization
+- Memoization : 중복되는 계산은 한 번만 계산 후 메모
 - Tabulation
