@@ -1,0 +1,76 @@
+1.
+하브루타 학습 효율성 피라미드
+스몰토크
+
+2. 일 어떻게 할 것인가?
+일을 잘 한다는 것 : 효과적, 효율적
+검색용 vs. 생성용 ai
+- 검색 : 정확한 사실, 최신 정보
+- 생성 : 논리적 추론, 아이디어 생성
+IPO 일처리 3단계 : Input + Process = Output
+- 원하는 output을 얻기 위해 input을 넣고 정해진 process대로 작동
+- input : 입체적 location 파악
+- process : KFS 파악과 목표 설정
+- output : 실행 아이디어 도출/실행
+
+3. 
+Yes & Guess 문화
+- 상사의 지시를 정확히 알아듣지 못해서 일단 알았다고 한 뒤 지시사항을 추측해 일을 처리함
+목적지향적 사고
+- 무슨 일을 하든지 먼저 그 일의 목적(존재이유, 가치, 미션)을 파악하는 사고
+일잘러의 업무공식 : Bob`s stetch
+- B : Background : 추진 배경, 진짜 이유
+- O : Objectives : 목적, 목표
+- B : Budget : 예산
+- S : Scope : 업무 범위, 추진 범위
+- S : Schedule : 일정, 일정 계획
+- K : Key stakeholders : 주요 이해관계자
+- E, T, C : Etc consideration 기타 고려사항
+- H : HR : 인력
+
+4.
+논리적 사고의 핵심 스킬
+- MECE : 상호 독립적(상호 배타적)이며, 총합적으로는 전체를 이루는 요소의 집합으로 중복이 없고 누락되지 않게 그룹핑하는 것
+    - M : Mutually 상호간에
+    - E : Exclusive 중복되지 않고
+    - C : Collectively 전체로서
+    - E : Exhaustive 누락이 없음
+- 3C : Company 자사, Competitor 경쟁사, Customer 고객
+- 4P : Product 제품 Price 가격, Place 유통, Promotion 판매촉진
+- SWOT : 강점, 약점, 기회, 위혐
+- 4C : Consumer 소비자, Convenience 편의시설, Communication to customer 고객과 의사소통, Cost 가격
+MECE 사고 실습
+
+5.
+chat gpt 프롬프트 가이드
+- task 수행시킬 일, 핵심 지시사항
+- context : 맥락, 배경, 역할
+- output : 결과물 형태
+- direction : 지침, 주의사항
+- information : 추가 정보, 자료
+Logic Tree
+- 논리적, 효과적인 분석을 위채 MECE 사고 방식에 따라 주요 항목으로 tree 형태로 분류한 것
+
+6.
+지진상황
+- 나     : 11 7 10 5 8 2 12 3 1 10 4 6
+- 전문가 : 11 10 12 4 7 6 9 3 2 1 5 8
+- 순위 차이 : 0 3 2 1 1 4 3 0 1 9 1 2 = 27
+지진상황에서의 우선순위
+- 긴급 조치 : 업무적 조치, 심리적 조치
+- 에너지 공급
+- 구출(장기 전략)
+일을 제대로 하기 위해서는 현상이 아닌 본질을 밝히는 논리적 사고 필요
+모든 일하기는 문제 해결
+목표를 세우고 그렇지 못한 현상 해결
+
+7.
+IPO 일처리 3단계
+메모의 효과
+- 목표의식이 생김
+- 성취감
+- 집중력 유지
+저항을 이기는 3가지 힘 : 메모, 일 쪼개기, 분출
+
+8. 
+간트차트
