@@ -1,6 +1,7 @@
 장소 전치사 on
 
 1. 너 얼굴에 뭐 묻었어
+* 표면의 접촉을 나타내는 on
 You have something on your face.
 너 얼굴에 뭐 묻었어.
 * on은 표면과의 접촉을 나타냄
@@ -13,12 +14,14 @@ The building is on Main street.
 그 건물은 Main가에 있어.
 
 2. 나 지하철에 있어
+* 이동 수단과 함께 쓰는 on
 I`m on the subway.
 나 지하철에 있어. 지하철을 타고 가고 있어.
 * on the subway : 지하철을 타고 있는 중
 
 3. 제일 좋아하는 프로그램이 티비에 나와
+* 기기, 통신수단, 미디어와 함께 쓰는 on
 My favorite show is on TV.
 내가 제일 좋아하는 프로그램이 티비에 나와.
 I`m on the phone.
-나 전화 중이야.
+나 전화 중이야. 통화 중이야.
