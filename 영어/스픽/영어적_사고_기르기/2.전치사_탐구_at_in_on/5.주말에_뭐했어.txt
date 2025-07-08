@@ -10,6 +10,8 @@ What did you do on the weekend?
 (지난)주말에 뭐 했어?
 * on은 작은 단위의 기간 : 일, 요일 주말
 * in은 긴 단위의 기간 : 일주일, 월, 연도
+I went cycling on the weekend.
+난 주말에 자전거를 타러 갔어.
 
 2. 보통/대부분의 주말에
 * weekend warrior : 주말에 취미 생활을 열심히 하는 사람
