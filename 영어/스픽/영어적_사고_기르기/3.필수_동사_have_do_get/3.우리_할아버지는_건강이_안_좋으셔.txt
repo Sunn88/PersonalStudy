@@ -10,6 +10,7 @@ I do laundry.
 * do the dusting : 먼지털이를 하다
 * do the cooking : 요리를 하다
 * do the ironing : 다림질을 하다
+* do the dishes : 설거지를 하다
 I do homework.
 나는 숙제를 해.
 I did a presentation.
@@ -30,3 +31,8 @@ My grandfather`s not doing well.
 우리 할아버지는 건강이 안 좋으셔.
 My business is doing well.
 내 사업은 잘 돼가고 있어.
+I`m doing well.
+나는 잘 지내고 있어.
+I`m doing okay.
+난 괜찮아. 괜찮게 지내고 있어.
+* to be doing okay : 잘 지내는 건 아니고 정말 '괜찮은; 정도로 지냄
