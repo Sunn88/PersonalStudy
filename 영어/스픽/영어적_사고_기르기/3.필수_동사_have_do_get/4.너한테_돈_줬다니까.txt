@@ -1,10 +1,16 @@
 do 동사(2부)
 do 동사로 의미 강조
 
+1. 강조하기 위한 do(현재형)
+* 문장에 '동사'의 의미를 강조해서 말하는 방법
 You do know it.
 너 그거 알고 있잖아.
 * You know it. : 너는 그것을 알고 있어.
 * You do know it. : 너 그거 분명히 알고 있잖아.
+You do have it.
+너 그거 가지고 있잖아, 없는 척 하지 말고 내놔!
+I do remember.
+나 기억 난다니까.
 You do look tired.
 너 정말 피곤해 보인다.
 I did give you the money.
@@ -14,5 +20,11 @@ I did go to the gym.
 I do study for exams.
 난 진짜 시험 공부를 해.
 * do Speaking Practice : 스피킹 연습을 하다
+
+2. 강조하기 위한 do(과거형)
 I did do the Speaking Practice.
 저 진짜로 스피킹 연습 했어요.
+I did tell you.
+나 너한테 말했어.
+I did give you the money.
+나 너한테 돈 줬거든.
