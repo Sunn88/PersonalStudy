@@ -1,16 +1,27 @@
 get 동사
 
 1. 얻다, 사다
+* buy보다 캐주얼하게 일상에서 많이 쓰이는 동사
 I got a new car.
 나 새 차를 샀어.
 * get : 획득하다, 소유하게 되다, 사다, 얻다
 * 무엇이 없는 상태에서 있는 상태가 되었을 때
 I want to get new shoes.
 나는 새 신발이 갖고 싶어.
+He got a new bag.
+그 남자는 가방을 새로 하나 샀어.
 
 2. 이해하다
+* 요점, 내용, 말귀를 '이해하다'라는 의미로도 쓸 수 있음
+I get it.
+무슨 말인지 알겠어, 이해하겠어.
+I got it.
+이해했어.
+* get vs. got : 시제가 달라도 비슷한 의미로 쓰임
 I didn`t get the joke.
 그 농담을 이해하지 못 했어.
 Did you get the main point?
 요점을 이해했어?
 * get : 이해를 얻는다, 요지/요점을 얻는다
+Did you get the plot?
+줄거리를 이해했어?
