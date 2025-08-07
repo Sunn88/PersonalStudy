@@ -10,13 +10,20 @@ My dad got to the airport.
 아빠는 공항에 도착하셨어.
 I got home at 10 last night.
 나는 어젯밤 10시에 집에 도착했어.
-* get home : 집에 도착하다
+* get home : 집에는 to 전치사를 붙이지 않음
+What time did you get home?
+집에 몇시에 도착했어?
+I got home at 10 last night.
+나는 어젯밤 10시에 집에 도착했어.
 
 2. 어떤 상태로 변하다
 The team leader got angry.
 팀장님은 화가 난 상태가 되셨어.
 The weather got cold.
 날씨가 추워졌어.
+The weather gets humiud in summer.
+날씨가 여름에 습해져.
+* humid : 습한
 The game got exciting.
 경기는 흥미진진해졌어.
 The price got expensive.
