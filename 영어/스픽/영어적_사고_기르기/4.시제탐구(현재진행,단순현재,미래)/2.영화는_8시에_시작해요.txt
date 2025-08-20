@@ -10,6 +10,8 @@ I work in San Francisco.
 저는 샌프란시스코에서 일해요.
 I`m working in San Francisco.
 저는 샌프란시스코에서 일하고 있어요.
+I`m staying in New York.
+저는 뉴욕에 머무르고 있어요.
 
 2. 불변의 진리
 South Korea is in Asia.
@@ -19,6 +21,8 @@ The sun rises in the east.
 해는 동쪽에서 뜬다.
 Two plus two equals four.
 2 더하기 2는 4와 같다.
+Busan is a city.
+부산은 (어느 하나의) 도시야.
 
 3. 정해진 일정
 The movie starts at 8.
@@ -29,3 +33,7 @@ The flight departs at 5.
 I start my new job on Monday.
 저는 월요일에 새 업무를 시작해요.
 * 단순현재형 + 시간,요일
+The train leaves a 3.
+(그) 기차는 3시에 떠나요.
+I start my new job on Monday.
+저는 월요일에 (제) 새 업무를 시작해요.
