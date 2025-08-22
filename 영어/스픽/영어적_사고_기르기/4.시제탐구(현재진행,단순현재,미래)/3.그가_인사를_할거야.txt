@@ -1,6 +1,7 @@
 be going to
 
 1. be going to의 긍정문
+* '이미 결정된 계획', '근거를 바탕으로 한 예측'을 표현할 때 사용
 We`re going to study.
 우리는 공부할 거예요.
 * 계획한 일을 말할 때
@@ -27,6 +28,16 @@ I`m not going to work out today.
 3. 의문문
 Is he going to come to the party?
 그가 파티에 와?
+Are you going to come to the meeting?
+너 회의에 올 거야?
+Are you going to ask her out?
+너 그녀에게 데이트 신청할 거야?
+Are you going to study English?
+너 영어 공부할 거야?
 
 4. gonna의 용법
 * going to = gonna
+It`s gonna rain.
+비 올 거야.
+I`m gonna eat fried chicken.
+나 후라이 치킨을 먹을거야.
