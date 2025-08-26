@@ -25,7 +25,6 @@ I`ll give you a ride.
 I`ll pursue you.
 내가 너를 쫓겠다.
 
-
 4. 약속
 I won`t be late.
 나 안 늦을게.
@@ -36,3 +35,8 @@ I won`t let you down.
 * will : 내가 ~하겠어(의지, 약속)
 I won`t bother you.
 널 귀찮게 하지 않을게.
+
+* find out : 찾아내다
+* Snow Day vs. Fire Ash Day
+* take a break : 잠깐 쉬다, 휴식시간을 갖다
+* call a cab : 택시를 부르다
