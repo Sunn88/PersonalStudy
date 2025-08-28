@@ -40,3 +40,29 @@ I won`t bother you.
 * Snow Day vs. Fire Ash Day
 * take a break : 잠깐 쉬다, 휴식시간을 갖다
 * call a cab : 택시를 부르다
+
+현재진행형(긍정, 부정, 의문)
+I`m recording a video. 저는 비디오를 녹화하고 있어요.
+You are learning English. 당신은 영어를 배우고 있어요.
+I`m watching a movie. 저는 영화를 시청하고 있어요.
+Are you recodring a video? 너 비디오 녹화 중이야?
+I`m planning a trip. 나 여행을 계획하고 있어요.
+
+현재형(사실, 진리, 정해진 일정)
+I live in L.A. 저는 L.A.에 살아요.
+I work in San Francisco. 저는 샌프란시스코에서 일해요.
+I`m staying in New York. 저는 뉴욕에 머무르고 있어요.
+Korea is in Asia. 한국은 아시아에 있어요.
+The movie starts at 8. 영화는 8시에 시작해요.
+The flight departs at 5. 비행기는 5시에 이륙해요.
+
+be going to + 동사
+I`m going to say hi. 나는 인사를 할 거야.
+I`m going to go to bed. 나 자러 갈 거야.
+It`s going to rain. 비가 올 거야.
+I`m not going to work out today. 나 오늘은 운동을 하지 않을거야.
+
+will의 다양한 용법
+I`ll have a latte. 저는 라테 한 잔을 할래요.
+I`ll come back later. 내가 이따가 다시 올게.
+* go viral : 바이럴해지다(sns등을 통해 빠르게 확산되는 것)
