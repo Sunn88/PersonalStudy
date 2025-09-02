@@ -7,6 +7,12 @@ The flight was very long.
 * very : 매우
 * pretty : 꽤
 * a little : 약간
+The speech was extremely boring.
+그 연설은 심하게 지겨웠어.
+The movie was very long.
+영화는 매우 길었어.
+The food was pretty good.
+그 음식은 꽤 맛있었어.
 
 2. 부사를 꾸며주는 부사
 Children learn very fast.
@@ -15,3 +21,7 @@ Politicians speak extremely carefully.
 정치인들은 극히 조심해서 말하고는 해.
 Steph left pretty nearly.
 Steph는 꽤 일찍 떠났어.
+The book was a little boring.
+그 책은 약간 지루했어.
+I learn very fast.
+나는 매우 빨리 배워.

@@ -12,7 +12,12 @@ He drives his car slowly. 그는 차를 천천히 운전한다.
 I passed the test easily.  나는 시험을 쉽게 합격했어.
 * easy -> easily, angry -> angrily
 I walked happily. 나는 즐겁게 걸었다.
-He yelled angrily. 근느 화를 내며 소리를 질렀다.
+He yelled angrily. 그는 화를 내며 소리를 질렀다.
+She walks carefully. 그녀는 조심스럽게 걸어.
+I walked happily. 나는 즐겁게 걸었어.
+He yelled angrily. 그는 화를 내며 소리를 질렀어.
+* 문장에 목적어가 있을 때는 일반적으로 행동을 나타내는 목적어 뒤에 부사를 붙임.
+
 
 2. 불규칙 부사
 I woke up late. 나 늦게 일어났어
@@ -21,3 +26,8 @@ I speak daily. 나는 매일 스피킹을 해
 * daily : 형용사=부사
 I slept well. 나 잘 잤어.
 * well : good의 부사
+I run weekly. 나는 매주 뛰어.
+He speaks English daily. 그는 매일 영어를 해.
+I got home early. 나 집에 일찍 왔어.
+The meeting started late. 회의가 늦게 시작했어.
+* No wonder ~ : ~가 어쩐지 전혀 놀랍지 않다.
