@@ -33,3 +33,4 @@ I just wake up.
 
 * shook : 감정적 또는 신체적으로 충격을 받은
 * classic : 뒤에 이름이 붙으면 고리타분한 느낌
+* correctly : 제대로, 올바르게
