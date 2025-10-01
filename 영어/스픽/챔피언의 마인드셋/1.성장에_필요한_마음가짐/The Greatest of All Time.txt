@@ -25,3 +25,19 @@ Who you choose to be friends with is important.
 I wonder what I sound like outsided my head.
 실제로는 어떻게 들릴지 궁금하다.
 * 'How I sound'도 가능
+
+how + you  + V : 어떻게 ~하는지 -> 방법이나 방식 표현
+where + you + V : 어디서 ~하는지 -> 장소나 위치 표현
+when + you + V : 언제 ~하는지 -> 시간이나 때 표현
+why + you + V : 왜 ~하는지 -> 이유나 목적 표현
+from + what/how/where : ~하는 것으로부터
+* 복합 구조에서는 의무문 어순이 아닌 평서문 어순 유지
+* do, are 같은 조동사 추가 X
+
+what you do : 무엇을 하는지
+how you practice : 어떻게 연습하는지
+who you spend time with : 누구와 시간을 보내는지
+what you do matters : 무엇을 하는지가 중요하다
+how you practice matters : 어떻게 연습하는지가 중요하다
+You are what you eat. : 먹는 것이 곧 당신이다.
+I know what you mean. : 무슨 말인지 앟아.
