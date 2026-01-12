@@ -25,3 +25,34 @@ The <action> in this movie is intense.
 게임의 승자는 다음 라운드로 진출할 것이다.
 The <winner> of the game will advance to the next round.
 
+
+1/12
+그녀가 내 집까지 자전거를 타고 왔어.
+She <biked> to my house.
+
+그들은 호수에서 낚시를 하러 갔어.
+They went <fishing> at the lake.
+
+그들은 산에 스키를 타러 갔어.
+They went <skiing> in the mountains.
+
+(우리)오늘 밤 어디에서 캠핑을 할까?
+Where should we <camp> tonight?
+
+나는 매일 아침에 개를 산책시켜.
+I <walk> the dog every morning.
+
+주식 가격이 오르고 있어.
+The stock prices are <climbing>.
+
+그들은 대서양을 가로질러 항해했어.
+They <sailed> across the Atlantic.
+
+그는 매일 자전거를 타고 출근을 해.
+He <bikes> to work every day.
+
+나는 주말에 낚시하는 것을 좋아해.
+I love to <fish> on weekends.
+
+우리는 주말 동안 숲에서 캠핑을 했어.
+We <camped> in the woods over the weekend.
